@@ -23,7 +23,7 @@ public class BaseTest extends Helper{
     @AfterTest
     public void close(){
         System.out.println("Driver initialized");
-//        driver.quit();
+        driver.quit();
 
 
     }
