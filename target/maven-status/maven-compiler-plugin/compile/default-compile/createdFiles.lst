@@ -1,0 +1,6 @@
+WebPages\CheckOutElements.class
+ElementPaths\LandingPagePaths.class
+WebPages\LandingPageElements.class
+Helpers\Helper.class
+Helpers\BrowserFactory.class
+WebPages\ProductDetailPageElements.class
