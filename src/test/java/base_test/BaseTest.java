@@ -15,7 +15,6 @@ public class BaseTest {
         Helper.createInstance();
     }
 
-
     @AfterTest
     public void close() {
         System.out.println("Test End");
