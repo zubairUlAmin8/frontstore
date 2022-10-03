@@ -12,8 +12,8 @@ public class VerifyProductOrderWithCod extends BaseTest {
     LandingPageElements landingPageElements;
 
     @Test
-    void searchProduct()  {
-        landingPageElements =new LandingPageElements(driver);
+    void searchProduct() {
+        landingPageElements = new LandingPageElements(driver);
 
         System.out.println(driver.getCurrentUrl());
         landingPageElements.searchProduct();

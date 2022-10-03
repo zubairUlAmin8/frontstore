@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 public class Checkout extends BaseTest {
 
     @Test
-    void test()
-    {
+    void test() {
 
     }
 
