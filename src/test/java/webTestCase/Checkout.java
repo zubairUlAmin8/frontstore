@@ -8,6 +8,7 @@ public class Checkout extends BaseTest {
     @Test
     void test()
     {
+
     }
 
 }

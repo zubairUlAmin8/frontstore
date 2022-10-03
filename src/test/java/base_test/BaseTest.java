@@ -2,6 +2,7 @@ package base_test;
 
 import Helpers.Helper;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -9,21 +10,20 @@ import org.testng.annotations.Test;
 
 // This class can be used as reference how to initialize driver and run test cases
 // Main Branch
-public class BaseTest extends Helper{
+public class BaseTest {
+     Helper helper=new Helper();
+    @BeforeClass
+    public  void initializeDriver(){
 
-    @BeforeTest
-    public static void initializeDriver(){
-        createInstance();
+
+        helper.createInstance();
     }
-    @Test (priority = 1)
-    public void run(){
-        System.out.println("Website Opened");
-    }
+
 
     @AfterTest
     public void close(){
-        System.out.println("Driver initialized");
-        driver.quit();
+        System.out.println("Test End");
+//        driver.quit();
 
 
     }
