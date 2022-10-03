@@ -7,18 +7,17 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
-
 // This class can be used as reference how to initialize driver and run test cases
 // Main Branch
 public class BaseTest {
     @BeforeClass
-    public  void initializeDriver(){
+    public void initializeDriver() {
         Helper.createInstance();
     }
 
 
     @AfterTest
-    public void close(){
+    public void close() {
         System.out.println("Test End");
 //        driver.quit();
     }
