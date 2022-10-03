@@ -8,9 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="FrontStore" />
-        <module name="." />
+        <module name="demo" />
         <module name="FrontSore" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="." target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
