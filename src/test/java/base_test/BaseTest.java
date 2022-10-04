@@ -1,23 +1,21 @@
 package base_test;
 
 import Helpers.Helper;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
+import Helpers.MyScreenRecorder;
+import org.testng.annotations.*;
 
 
 // This class can be used as reference how to initialize driver and run test cases
 // Main Branch
 public class BaseTest {
     @BeforeClass
-    public  void initializeDriver(){
+    public  void initializeDriver() throws Exception {
         Helper.createInstance();
+
     }
 
-    @AfterTest
-    public void close(){
+    @AfterClass
+    public void close() throws Exception {
         System.out.println("Test End");
 //        Helper.driver.quit();
     }

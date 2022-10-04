@@ -1,5 +1,6 @@
 package webTestCase;
 
+import Helpers.MyScreenRecorder;
 import Helpers.Utility;
 import WebPages.*;
 import base_test.BaseTest;
@@ -17,11 +18,12 @@ public class VerifyProductOrderWithCard extends BaseTest {
     CheckoutPageElements checkoutPageElements;
     ThankYouPageElements thankYouPageElements;
     SandboxPathElements sandboxPathElements;
+    MyScreenRecorder myScreenRecorder;
 
     @Test(priority = 1)
-    void openProductByLink() throws IOException {
+    void openProductByLink() throws Exception {
+        MyScreenRecorder.startRecording("OrderWithCard");
         driver.get(Utility.getValue("launch", "ProductUrl"));
-
     }
 
     @Test(priority = 2)
@@ -47,23 +49,28 @@ public class VerifyProductOrderWithCard extends BaseTest {
         loginElements = new LoginElements(driver);
         loginElements.login();
     }
+
     @Test(priority = 6)
-    void fillCardDetails() throws IOException {
+    void fillCardDetails() throws Exception {
         checkoutPageElements = new CheckoutPageElements(driver);
         checkoutPageElements.payWithCard();
         checkoutPageElements.clickToPayWithCard();
+
     }
+
     @Test(priority = 7)
     void sandboxVerification() throws IOException, InterruptedException {
         sandboxPathElements = new SandboxPathElements(driver);
         sandboxPathElements.verifyPaymentProcessBySandbox();
     }
 
-    @Test(priority =8)
-    void verifyOrderPlacedOrNot() throws InterruptedException {
+    @Test(priority = 8)
+    void verifyOrderPlacedOrNot() throws Exception {
         Thread.sleep(8000);
-        System.out.println("thankyou url"+ driver.getCurrentUrl());
         thankYouPageElements.verifyOrderPlacedOrNot();
     }
-
+    @Test(priority = 9)
+    void closeScreenRecord() throws Exception {
+        MyScreenRecorder.stopRecording();
+    }
 }
