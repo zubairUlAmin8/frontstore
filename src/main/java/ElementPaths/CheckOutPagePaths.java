@@ -9,6 +9,7 @@ public interface CheckOutPagePaths {
     String CVV_CodeInputField = "input#card_security_code";
     String cardHolderNameInputFiled = "input#card_holder_name";
     String payNowButton = "button#checkout-submit-btn";
+    String creditCardWithInstallmentRadio = "label[for=\"payment-type-cci\"]";
 
 
 }

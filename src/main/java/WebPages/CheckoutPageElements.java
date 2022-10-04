@@ -37,24 +37,30 @@ public class CheckoutPageElements extends Helper {
     WebElement cardHolderNameInputFiled;
     @FindBy(css = CheckOutPagePaths.payNowButton)
     WebElement payNowButton;
+    @FindBy(css = CheckOutPagePaths.creditCardWithInstallmentRadio)
+    WebElement creditCardWithInstallmentRadio;
 
     public void placeOrderWithCOD() throws InterruptedException {
-        Waits.clickButton(driver, codRadioButton,30);
+        Waits.clickButton(driver, codRadioButton, 30);
         Thread.sleep(5000);
-        Waits.clickButton(driver, placeOrderButton,30);
+        Waits.clickButton(driver, placeOrderButton, 30);
     }
 
     public void payWithCard() throws IOException {
         Waits.waitForElements(driver, cardNumberInputField, 30);
-        cardNumberInputField.sendKeys(Utility.getValue("Credentials","cardNumber"));
-        cardExpiryMonth.sendKeys(Utility.getValue("Credentials","cardExpiryMonth"));
-        cardExpiryYear.sendKeys(Utility.getValue("Credentials","cardExpiryYear"));
-        CVV_CodeInputField.sendKeys(Utility.getValue("Credentials","CVV_Code"));
-        cardHolderNameInputFiled.sendKeys(Utility.getValue("Credentials","cardHolderName"));
+        cardNumberInputField.sendKeys(Utility.getValue("Credentials", "cardNumber"));
+        cardExpiryMonth.sendKeys(Utility.getValue("Credentials", "cardExpiryMonth"));
+        cardExpiryYear.sendKeys(Utility.getValue("Credentials", "cardExpiryYear"));
+        CVV_CodeInputField.sendKeys(Utility.getValue("Credentials", "CVV_Code"));
+        cardHolderNameInputFiled.sendKeys(Utility.getValue("Credentials", "cardHolderName"));
     }
 
     public void clickToPayWithCard() {
         payNowButton.click();
     }
 
+    public void selectCreditCardWithInstallment() {
+        Waits.waitForElements(driver, creditCardWithInstallmentRadio, 30);
+        creditCardWithInstallmentRadio.click();
+    }
 }
