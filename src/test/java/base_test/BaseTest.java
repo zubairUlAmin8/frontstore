@@ -19,6 +19,6 @@ public class BaseTest {
     @AfterTest
     public void close(){
         System.out.println("Test End");
-//        driver.quit();
+//        Helper.driver.quit();
     }
 }

@@ -3,30 +3,20 @@ package webTestCase;
 import Helpers.Utility;
 import WebPages.*;
 import base_test.BaseTest;
-import com.github.javafaker.Bool;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
 import java.io.IOException;
 
 import static Helpers.Helper.driver;
 
-
-public class VerifyProductOrderWithCod extends BaseTest {
+public class VerifyProductOrderWithCard extends BaseTest {
     LandingPageElements landingPageElements;
     ProductDetailPageElements productDetailPageElements;
     CartPageElements cartPageElements;
     LoginElements loginElements;
     CheckoutPageElements checkoutPageElements;
     ThankYouPageElements thankYouPageElements;
-
-    //    @Test(priority = 0)
-    void searchProduct() throws InterruptedException {
-        landingPageElements = new LandingPageElements(driver);
-        landingPageElements.searchProduct();
-        landingPageElements.selectProductFromSearchBar();
-    }
+    SandboxPathElements sandboxPathElements;
 
     @Test(priority = 1)
     void openProductByLink() throws IOException {
@@ -42,6 +32,7 @@ public class VerifyProductOrderWithCod extends BaseTest {
 
     @Test(priority = 3)
     void goToViewCartItems() {
+        productDetailPageElements = new ProductDetailPageElements(driver);
         productDetailPageElements.goToViewCartItems();
     }
 
@@ -55,22 +46,24 @@ public class VerifyProductOrderWithCod extends BaseTest {
     void loginIntoUserAccount() {
         loginElements = new LoginElements(driver);
         loginElements.login();
-
     }
-
     @Test(priority = 6)
-    void PlaceOrderWithCodAfterCheckout() throws InterruptedException {
+    void fillCardDetails() throws IOException {
         checkoutPageElements = new CheckoutPageElements(driver);
-        checkoutPageElements.placeOrderWithCOD();
-
+        checkoutPageElements.payWithCard();
+        checkoutPageElements.clickToPayWithCard();
     }
-
     @Test(priority = 7)
-    void orderVerified() {
-        thankYouPageElements = new ThankYouPageElements(driver);
-        Boolean check = thankYouPageElements.verifyOrderPlacedOrNot();
-        Assert.assertTrue(check);
+    void sandboxVerification() throws IOException, InterruptedException {
+        sandboxPathElements = new SandboxPathElements(driver);
+        sandboxPathElements.verifyPaymentProcessBySandbox();
     }
 
+    @Test(priority =8)
+    void verifyOrderPlacedOrNot() throws InterruptedException {
+        Thread.sleep(8000);
+        System.out.println("thankyou url"+ driver.getCurrentUrl());
+        thankYouPageElements.verifyOrderPlacedOrNot();
+    }
 
 }

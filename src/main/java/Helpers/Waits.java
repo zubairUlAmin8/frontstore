@@ -26,4 +26,5 @@ public class Waits {
         wait.until(ExpectedConditions.visibilityOf(element));
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
+
 }
