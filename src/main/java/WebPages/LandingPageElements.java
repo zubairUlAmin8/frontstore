@@ -3,6 +3,7 @@ package WebPages;
 import ElementPaths.LandingPagePaths;
 import Helpers.Helper;
 import Helpers.RandomData;
+import Helpers.Utility;
 import Helpers.Waits;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.io.IOException;
 import java.util.List;
 
 public class LandingPageElements extends Helper {
@@ -30,17 +32,17 @@ public class LandingPageElements extends Helper {
         searchBarInputField.sendKeys("iphone");
     }
 
+
     public void selectProductFromSearchBar() throws InterruptedException {
         Waits.waitForElements(driver, searchResultListSingle,30);
         List<WebElement> searchResultList=driver.findElements(By.cssSelector(LandingPagePaths.searchResultList));
         int random_index = RandomData.randomNumber(searchResultList.size());
         int index=0;
         for (WebElement element:searchResultList) {
-            if (0 == index) {
+            if (3 == index) {
                 element.click();
             }
             index++;
         }
     }
-
 }
