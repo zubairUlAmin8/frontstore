@@ -39,6 +39,8 @@ public class CheckoutPageElements extends Helper {
     WebElement payNowButton;
     @FindBy(css = CheckOutPagePaths.creditCardWithInstallmentRadio)
     WebElement creditCardWithInstallmentRadio;
+    @FindBy(css = CheckOutPagePaths.installmentWithTabbyRadioButton)
+    WebElement installmentWithTabbyRadioButton;
 
     public void placeOrderWithCOD() throws InterruptedException {
         Waits.clickButton(driver, codRadioButton, 30);
@@ -62,5 +64,8 @@ public class CheckoutPageElements extends Helper {
     public void selectCreditCardWithInstallment() {
         Waits.waitForElements(driver, creditCardWithInstallmentRadio, 30);
         creditCardWithInstallmentRadio.click();
+    }  public void selectInstallmentWithTabby() {
+        Waits.waitForElements(driver, installmentWithTabbyRadioButton, 30);
+        installmentWithTabbyRadioButton.click();
     }
 }

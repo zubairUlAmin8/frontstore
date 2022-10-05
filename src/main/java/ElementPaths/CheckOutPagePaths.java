@@ -10,6 +10,7 @@ public interface CheckOutPagePaths {
     String cardHolderNameInputFiled = "input#card_holder_name";
     String payNowButton = "button#checkout-submit-btn";
     String creditCardWithInstallmentRadio = "label[for=\"payment-type-cci\"]";
+    String installmentWithTabbyRadioButton = "label[for=\"payment-type-cct\"]";
 
 
 }

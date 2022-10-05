@@ -10,11 +10,11 @@ public class BaseTest {
     @BeforeClass
     public  void initializeDriver() throws Exception {
         Helper.createInstance();
-
+        MyScreenRecorder.startRecording("OrderWithCard");
     }
     @AfterClass
     public void close() throws Exception {
-        System.out.println("Test End");
-//        Helper.driver.quit();
+        Helper.driver.quit();
+        MyScreenRecorder.stopRecording();
     }
 }

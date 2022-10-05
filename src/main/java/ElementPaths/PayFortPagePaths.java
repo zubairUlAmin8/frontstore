@@ -11,7 +11,5 @@ public interface PayFortPagePaths  {
     String expiryDate = "input[name=\"expDate\"]";
     String CVV_Code = "input[name=\"card_security_code\"]";
     String agreementCheckBox = "input[name=\"bank\"]";
-    String payButton = "input[name=\"bank\"]";
-
-
+    String payButton = "button[name=\"pay\"]";
 }

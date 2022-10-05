@@ -33,7 +33,7 @@ public class SandboxPathElements extends Helper {
         sandboxPasswordInputField.sendKeys(Utility.getValue("Credentials","sandboxPassword"));
         Waits.clickButton(driver, continueButton,30);
         Thread.sleep(5000);
-
+        driver.switchTo().parentFrame();
     }
 
 }
