@@ -8,22 +8,12 @@ import org.testng.annotations.*;
 // Main Branch
 public class BaseTest {
     @BeforeClass
-<<<<<<< HEAD
     public  void initializeDriver() throws Exception {
-=======
-    public void initializeDriver() {
->>>>>>> origin
         Helper.createInstance();
 
     }
-
-<<<<<<< HEAD
     @AfterClass
     public void close() throws Exception {
-=======
-    @AfterTest
-    public void close() {
->>>>>>> origin
         System.out.println("Test End");
 //        Helper.driver.quit();
     }
