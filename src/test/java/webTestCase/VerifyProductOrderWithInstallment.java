@@ -3,30 +3,21 @@ package webTestCase;
 import Helpers.Utility;
 import WebPages.*;
 import base_test.BaseTest;
-import com.github.javafaker.Bool;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
 import java.io.IOException;
 
 import static Helpers.Helper.driver;
 
-
-public class VerifyProductOrderWithCod extends BaseTest {
+public class VerifyProductOrderWithInstallment extends BaseTest {
     LandingPageElements landingPageElements;
     ProductDetailPageElements productDetailPageElements;
     CartPageElements cartPageElements;
     LoginElements loginElements;
     CheckoutPageElements checkoutPageElements;
     ThankYouPageElements thankYouPageElements;
+    PayFortPageElements payFortPageElements;
 
-    //    @Test(priority = 0)
-    void searchProduct() throws InterruptedException {
-        landingPageElements = new LandingPageElements(driver);
-        landingPageElements.searchProduct();
-        landingPageElements.selectProductFromSearchBar();
-    }
 
     @Test(priority = 1)
     void openProductByLink() throws IOException {
@@ -59,18 +50,14 @@ public class VerifyProductOrderWithCod extends BaseTest {
     }
 
     @Test(priority = 6)
-    void PlaceOrderWithCodAfterCheckout() throws InterruptedException {
+    void placedWithInstallment() throws InterruptedException {
         checkoutPageElements = new CheckoutPageElements(driver);
-        checkoutPageElements.placeOrderWithCOD();
-
+        checkoutPageElements.selectCreditCardWithInstallment();
     }
 
     @Test(priority = 7)
-    void orderVerified() {
-        thankYouPageElements = new ThankYouPageElements(driver);
-        Boolean check = thankYouPageElements.verifyOrderPlacedOrNot();
-        Assert.assertTrue(check);
+    void fillBankFormForInstallment() throws IOException {
+        payFortPageElements= new PayFortPageElements(driver);
+        payFortPageElements.fillBankForInstallment();
     }
-
-
 }

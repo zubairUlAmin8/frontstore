@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProductDetailPageElements extends Helper {
     public ProductDetailPageElements(WebDriver driver) {
-        this.driver = driver;
+        Helper.driver = driver;
         PageFactory.initElements(driver, this);
 
     }
@@ -27,7 +27,10 @@ public class ProductDetailPageElements extends Helper {
     }
 
     public void goToViewCartItems() {
+
+        Waits.waitForElements(driver, cartIcon, 50);
         cartIcon.click();
+        Waits.waitForElements(driver, viewCartItems, 50);
         Waits.clickButton(driver, viewCartItems,30);
     }
 }
