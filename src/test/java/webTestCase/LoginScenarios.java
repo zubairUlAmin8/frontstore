@@ -9,13 +9,18 @@ import static Helpers.Helper.driver;
 public class LoginScenarios extends BaseTest {
     LoginScenariosElements loginScenarioElements;
     @Test(priority = 1)
-    void validCredentials() {
+    void validCredentials() throws InterruptedException {
         loginScenarioElements = new LoginScenariosElements(driver);
         loginScenarioElements.validCredentials();
     }
-    @Test(priority = 1)
-    void wrongCredentials() {
+    @Test(priority = 2)
+    void wrongCredentials() throws InterruptedException {
         loginScenarioElements = new LoginScenariosElements(driver);
         loginScenarioElements.invalidCredentials();
+    }
+    @Test(priority = 3)
+    void emptyFields() throws InterruptedException {
+        loginScenarioElements = new LoginScenariosElements(driver);
+        loginScenarioElements.emptyFields();
     }
 }
