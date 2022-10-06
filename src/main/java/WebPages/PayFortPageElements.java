@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class PayFortPageElements extends Helper {
     public PayFortPageElements(WebDriver driver) {
-        this.driver = driver;
+        Helper.driver = driver;
         PageFactory.initElements(driver, this);
 
     }
@@ -37,8 +37,9 @@ public class PayFortPageElements extends Helper {
     WebElement agreementCheckBox;
     @FindBy(css = PayFortPagePaths.payButton)
     WebElement payButton;
+
     public void fillBankForInstallment() throws IOException {
-        Waits.waitForElements(driver,countryDropDown,60);
+        Waits.waitForElements(driver, countryDropDown, 60);
         cardHolderName.sendKeys(Utility.getValue("Credentials", "cardHolderName"));
         cardNumber.sendKeys(Utility.getValue("Credentials", "cardNumber"));
         expiryDate.sendKeys(Utility.getValue("Credentials", "expiryDate"));

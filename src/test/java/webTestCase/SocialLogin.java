@@ -8,8 +8,9 @@ import static Helpers.Helper.driver;
 
 public class SocialLogin extends BaseTest {
     SocialLoginElements socialLoginElements;
+
     @Test(priority = 1)
-    void fbLoginVerify(){
+    void fbLoginVerify() {
         socialLoginElements = new SocialLoginElements(driver);
         socialLoginElements.facebookLoginVerify();
     }

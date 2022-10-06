@@ -13,10 +13,11 @@ import static Helpers.Helper.driver;
 
 public class SocialLoginElements {
     //Constructor
-    public SocialLoginElements(WebDriver driver){
+    public SocialLoginElements(WebDriver driver) {
         Helper.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
     // Initializing Xpath's
     @FindBy(css = LoginPagePaths.homeSignInButton)
     WebElement homeSignInButton;
@@ -40,13 +41,13 @@ public class SocialLoginElements {
     WebElement fbButton;
 
     // Facebook Login function
-    public void facebookLoginVerify(){
+    public void facebookLoginVerify() {
         homeSignInButton.click();
         Waits.clickButton(driver, fbLoginButton, 30);
         Waits.sendKeys(driver, fbEmail, "gahin45469@aregods.com", 30);
         Waits.sendKeys(driver, fbPassword, "cartlow1122T", 30);
         Waits.clickButton(driver, fbButton, 30);
-        Waits.clickButton(driver,accountButton, 30);
+        Waits.clickButton(driver, accountButton, 30);
         Waits.clickButton(driver, logoutButton, 30);
     }
 }

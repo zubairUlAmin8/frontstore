@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class CheckoutPageElements extends Helper {
     public CheckoutPageElements(WebDriver driver) {
-        this.driver = driver;
+        Helper.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
