@@ -14,7 +14,7 @@ public class BaseTest {
     }
     @AfterClass
     public void close() throws Exception {
-        Helper.driver.quit();
+//        Helper.driver.quit();
         MyScreenRecorder.stopRecording();
     }
 }
