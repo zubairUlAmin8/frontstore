@@ -57,7 +57,7 @@ public class VerifyProductOrderWithInstallment extends BaseTest {
 
     @Test(priority = 7)
     void fillBankFormForInstallment() throws IOException {
-        payFortPageElements= new PayFortPageElements(driver);
+        payFortPageElements = new PayFortPageElements(driver);
         payFortPageElements.fillBankForInstallment();
     }
 }

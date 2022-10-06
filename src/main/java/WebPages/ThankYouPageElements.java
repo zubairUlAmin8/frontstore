@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ThankYouPageElements extends Helper {
     public ThankYouPageElements(WebDriver driver) {
-        this.driver = driver;
+        Helper.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -20,9 +20,9 @@ public class ThankYouPageElements extends Helper {
     public boolean verifyOrderPlacedOrNot() {
         driver.switchTo().defaultContent();
         Boolean status = false;
-        Waits.waitForElements(driver,thankYou,50);
+        Waits.waitForElements(driver, thankYou, 50);
         String checkString = thankYou.getText();
-        System.out.println("string is:" +checkString);
+        System.out.println("string is:" + checkString);
 
         if (checkString.startsWith("Thank you for your order")) {
             status = true;

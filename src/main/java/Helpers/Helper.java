@@ -12,4 +12,10 @@ public class Helper {
         String browser = Utility.getValue("launch", "browser");
         driver = BrowserFactory.startBrowser(browser, url);
     }
+
+    public static void pause(int j) throws InterruptedException {
+        for (int i = 0; i < j; i++) {
+            Thread.sleep(950);
+        }
+    }
 }

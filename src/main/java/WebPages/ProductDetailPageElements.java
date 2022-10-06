@@ -14,6 +14,7 @@ public class ProductDetailPageElements extends Helper {
         PageFactory.initElements(driver, this);
 
     }
+
     @FindBy(css = ProductDetailsPagePaths.addToCartButton)
     WebElement addToCartButton;
     @FindBy(css = ProductDetailsPagePaths.cartIcon)
@@ -31,6 +32,6 @@ public class ProductDetailPageElements extends Helper {
         Waits.waitForElements(driver, cartIcon, 50);
         cartIcon.click();
         Waits.waitForElements(driver, viewCartItems, 50);
-        Waits.clickButton(driver, viewCartItems,30);
+        Waits.clickButton(driver, viewCartItems, 30);
     }
 }

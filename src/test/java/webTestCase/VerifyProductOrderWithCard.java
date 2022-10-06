@@ -69,6 +69,7 @@ public class VerifyProductOrderWithCard extends BaseTest {
         Thread.sleep(8000);
         thankYouPageElements.verifyOrderPlacedOrNot();
     }
+
     @Test(priority = 9)
     void closeScreenRecord() throws Exception {
         MyScreenRecorder.stopRecording();

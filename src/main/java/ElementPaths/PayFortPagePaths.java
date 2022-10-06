@@ -2,7 +2,7 @@ package ElementPaths;
 
 import lombok.experimental.Helper;
 
-public interface PayFortPagePaths  {
+public interface PayFortPagePaths {
     String countryDropDown = "div.cs-select.cs-skin-border.cs-skin-elastic.country>span";
     String bankDropDown = "div.cs-select.cs-skin-border.cs-skin-elastic.issuer>span";
     String installmentTypeDropDown = "div.cs-select.cs-skin-border.full-width.cs-skin-elastic>span";
