@@ -13,7 +13,10 @@ import javax.swing.*;
 
 import static Helpers.Helper.driver;
 
-public class VerifyCancelOrder extends BaseTest {
+public class
+
+
+VerifyCancelOrder extends BaseTest {
     LoginElements loginElements;
     MyOrdersPageElements myOrdersPageElements;
 

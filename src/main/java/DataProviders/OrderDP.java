@@ -13,11 +13,16 @@ public class OrderDP {
     @DataProvider(name = "orderNumberForCancelation")
     public Object[][] dpOrderCancelation(){
         return new Object[][]{
-                {"874306"},
-                {"874303"},
-                {"874302"},
-                {"874312"},
-                {"874313"}
+                {"874366"},
+                {"874364"},
+                {"874361"},
+                {"874358"},
+                {"874357"},
+                {"874336"},
+                {"874335"},
+                {"874334"},
+                {"874326"},
+                {"874322"}
 
         };
     }
