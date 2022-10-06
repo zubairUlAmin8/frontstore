@@ -25,5 +25,8 @@ public interface LoginPagePaths {
     // OTP Login Xpath's
     String otpEmailOrPhoneNumber = "#otpEmail";
     String continueButton = "#login-otp";
+    String confirmOTP = "#confirm_otp";
+    String otpCode = "//input[@name=\"code\"]";
+    String otpVerificationText = "#otp-verification-modal > div > div > div > div > div > div > div.col-md-12 > div > h2";
 
 }

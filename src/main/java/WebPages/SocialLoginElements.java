@@ -9,17 +9,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 import static Helpers.Helper.driver;
+import static Helpers.Helper.pause;
 
 public class SocialLoginElements {
     // Object for Faker
     Faker faker = new Faker();
+    //Waiting for element
+    public WebDriverWait wait;
+
     //Constructor
     public SocialLoginElements(WebDriver driver) {
         Helper.driver = driver;
         PageFactory.initElements(driver, this);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(50));
     }
 
     // Initializing Xpath's
@@ -59,6 +68,12 @@ public class SocialLoginElements {
     WebElement otpEmailOrPhoneNumber;
     @FindBy(css = LoginPagePaths.continueButton)
     WebElement continueButton;
+    @FindBy(css = LoginPagePaths.otpVerificationText)
+    WebElement otpVerificationText;
+    @FindBy(xpath = LoginPagePaths.otpCode)
+    WebElement otpCode;
+    @FindBy(css = LoginPagePaths.confirmOTP)
+    WebElement confirmOTP;
 
 
     // Facebook Login function
@@ -73,7 +88,7 @@ public class SocialLoginElements {
     }
 
     // Gmail Login function
-    public void gmailLoginVerify(){
+    public void gmailLoginVerify() {
         homeSignInButton.click();
         Waits.clickButton(driver, gmailLoginButton, 30);
         Waits.sendKeys(driver, gEmail, "talha.sajjad@cartlow.com", 30);
@@ -85,10 +100,30 @@ public class SocialLoginElements {
     }
 
     // Login with Email OTP
-    public void otpWithEmailVerify(){
+    public void otpWithEmailVerify() {
         homeSignInButton.click();
         Waits.clickButton(driver, otpLoginButton, 30);
         String fakeEmail = faker.internet().safeEmailAddress();
-        Waits.sendKeys(driver, otpEmailOrPhoneNumber, fakeEmail,30);
+        Waits.sendKeys(driver, otpEmailOrPhoneNumber, fakeEmail, 30);
+        Waits.clickButton(driver, continueButton, 30);
+        wait.until(ExpectedConditions.textToBePresentInElement(otpVerificationText, "OTP Verification"));
+        Waits.sendKeys(driver, otpCode, "1111", 30);
+        Waits.clickButton(driver, confirmOTP, 30);
+        Waits.clickButton(driver, accountButton, 30);
+        Waits.clickButton(driver, logoutButton, 30);
+    }
+
+    // Login with Phone OTP
+    public void otpWithPhoneVerify() {
+        homeSignInButton.click();
+        Waits.clickButton(driver, otpLoginButton, 30);
+        String fakePhone = faker.number().digits(7);
+        Waits.sendKeys(driver, otpEmailOrPhoneNumber, "+97150" + fakePhone, 30);
+        Waits.clickButton(driver, continueButton, 30);
+        wait.until(ExpectedConditions.textToBePresentInElement(otpVerificationText, "OTP Verification"));
+        Waits.sendKeys(driver, otpCode, "1111", 30);
+        Waits.clickButton(driver, confirmOTP, 30);
+        Waits.clickButton(driver, accountButton, 30);
+        Waits.clickButton(driver, logoutButton, 30);
     }
 }
