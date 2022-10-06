@@ -14,4 +14,22 @@ public class SocialLogin extends BaseTest {
         socialLoginElements = new SocialLoginElements(driver);
         socialLoginElements.facebookLoginVerify();
     }
+
+    @Test(priority = 2)
+    void gmailLoginVerify() {
+        socialLoginElements = new SocialLoginElements(driver);
+        socialLoginElements.gmailLoginVerify();
+    }
+
+    @Test(priority = 3)
+    void otpWithEmail() throws InterruptedException {
+        socialLoginElements = new SocialLoginElements(driver);
+        socialLoginElements.otpWithEmailVerify();
+    }
+
+    @Test(priority = 4)
+    void otpWithPhone() {
+        socialLoginElements = new SocialLoginElements(driver);
+        socialLoginElements.otpWithPhoneVerify();
+    }
 }
