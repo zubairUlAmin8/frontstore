@@ -9,7 +9,12 @@ public class BaseTest {
 
     public  void initializeDriver() throws Exception {
         Helper.createInstance();
-        MyScreenRecorder.startRecording("OrderWithCard");
+    }
+    @BeforeTest
+    public void check() throws Exception {
+        String className = this.getClass().getSimpleName();
+        MyScreenRecorder.startRecording(className);
+        System.out.println(className);
     }
     @AfterClass
     public void close() throws Exception {
