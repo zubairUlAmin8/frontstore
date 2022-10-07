@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static Helpers.Helper.driver;
 
-public class SocialLogin extends BaseTest {
+public class VerifySocialLogin extends BaseTest {
     SocialLoginElements socialLoginElements;
 
     @Test(priority = 1)

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static Helpers.Helper.driver;
 
-public class LoginScenarios extends BaseTest {
+public class VerifyLoginScenarios extends BaseTest {
     LoginScenariosElements loginScenarioElements;
 
     @Test(priority = 1)
