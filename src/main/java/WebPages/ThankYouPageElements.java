@@ -18,6 +18,7 @@ public class ThankYouPageElements extends Helper {
     WebElement thankYou;
 
     public boolean verifyOrderPlacedOrNot() {
+        Waits.waitForElements(driver,thankYou,100);
         driver.switchTo().defaultContent();
         Boolean status = false;
         Waits.waitForElements(driver, thankYou, 50);

@@ -3,10 +3,16 @@ package WebPages;
 import ElementPaths.ProductDetailsPagePaths;
 import Helpers.Helper;
 import Helpers.Waits;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class ProductDetailPageElements extends Helper {
     public ProductDetailPageElements(WebDriver driver) {
@@ -29,9 +35,18 @@ public class ProductDetailPageElements extends Helper {
 
     public void goToViewCartItems() {
 
+<<<<<<< HEAD
+        Actions action = new Actions(driver);
+        action.moveToElement(cartIcon).perform();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ProductDetailsPagePaths.viewCartItems)));
+        element.click();
+
+=======
         Waits.waitForElements(driver, cartIcon, 50);
         cartIcon.click();
         Waits.waitForElements(driver, viewCartItems, 50);
         Waits.clickButton(driver, viewCartItems, 30);
+>>>>>>> origin/main
     }
 }

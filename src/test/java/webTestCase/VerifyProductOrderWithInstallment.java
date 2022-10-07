@@ -1,8 +1,10 @@
 package webTestCase;
 
+import Helpers.Helper;
 import Helpers.Utility;
 import WebPages.*;
 import base_test.BaseTest;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -50,14 +52,25 @@ public class VerifyProductOrderWithInstallment extends BaseTest {
     }
 
     @Test(priority = 6)
-    void placedWithInstallment() throws InterruptedException {
+    void placedWithInstallment()  {
         checkoutPageElements = new CheckoutPageElements(driver);
         checkoutPageElements.selectCreditCardWithInstallment();
     }
 
     @Test(priority = 7)
+<<<<<<< HEAD
+    void fillBankFormForInstallment() throws IOException, InterruptedException {
+        payFortPageElements= new PayFortPageElements(driver);
+=======
     void fillBankFormForInstallment() throws IOException {
         payFortPageElements = new PayFortPageElements(driver);
+>>>>>>> origin/main
         payFortPageElements.fillBankForInstallment();
+    }
+    @Test(priority = 8)
+    void orderVerified() {
+        thankYouPageElements = new ThankYouPageElements(Helper.driver);
+        Boolean check = thankYouPageElements.verifyOrderPlacedOrNot();
+        Assert.assertTrue(check);
     }
 }

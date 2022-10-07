@@ -5,6 +5,9 @@ public interface LoginPagePaths {
     String passwordInputField = "input.form-control.prepended-form-control[onkeyup=\"if(this.value != ''){$('#si-password-error').html('')}\"]";
     String eyeIcon = "#signin-tab > div > div > div > div.col-lg-6.col-md-6.col-sm-12 > div.form-group.mb-2 > div > label";
     String signInButton = "button#sign-in";
+<<<<<<< HEAD
+    String accountIcon = "//a[@href=\"#signin-modal\"]"; //xpath
+=======
     String homeSignInButton = "body > div.style2 > header > div > div.navbar.navbar-expand-lg.navbar-light.resp-height > div > div > div.col-lg-auto.order-lg-3 > div > div > ul > li:nth-child(4) > a";
     String accountButton = "body > div.style2 > header > div > div.navbar.navbar-expand-lg.navbar-light.resp-height > div > div > div.col-lg-auto.order-lg-3 > div > div > ul > li:nth-child(4) > div > a";
     String logoutButton = "#form-button";
@@ -28,5 +31,6 @@ public interface LoginPagePaths {
     String confirmOTP = "#confirm_otp";
     String otpCode = "//input[@name=\"code\"]";
     String otpVerificationText = "#otp-verification-modal > div > div > div > div > div > div > div.col-md-12 > div > h2";
+>>>>>>> origin/main
 
 }
