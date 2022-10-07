@@ -58,13 +58,9 @@ public class VerifyProductOrderWithInstallment extends BaseTest {
     }
 
     @Test(priority = 7)
-<<<<<<< HEAD
     void fillBankFormForInstallment() throws IOException, InterruptedException {
         payFortPageElements= new PayFortPageElements(driver);
-=======
-    void fillBankFormForInstallment() throws IOException {
-        payFortPageElements = new PayFortPageElements(driver);
->>>>>>> origin/main
+
         payFortPageElements.fillBankForInstallment();
     }
     @Test(priority = 8)

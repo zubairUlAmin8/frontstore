@@ -39,7 +39,6 @@ public class PayFortPageElements extends Helper {
     @FindBy(css = PayFortPagePaths.payButton)
     WebElement payButton;
 
-<<<<<<< HEAD
     public void fillBankForInstallment() throws IOException, InterruptedException {
         Waits.waitForElements(driver, countryDropDown, 60);
         countryDropDown.click();
@@ -54,11 +53,6 @@ public class PayFortPageElements extends Helper {
 
         installmentTypeDropDown.click();
         driver.findElement(By.cssSelector("label.plan-label")).click();
-
-=======
-    public void fillBankForInstallment() throws IOException {
-        Waits.waitForElements(driver, countryDropDown, 60);
->>>>>>> origin/main
         cardHolderName.sendKeys(Utility.getValue("Credentials", "cardHolderName"));
         cardNumber.sendKeys(Utility.getValue("Credentials", "payfortCardNumber"));
         expiryDate.sendKeys(Utility.getValue("Credentials", "expiryDate"));
