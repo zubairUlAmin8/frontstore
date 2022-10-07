@@ -20,6 +20,7 @@ public class ProductDetailPageElements extends Helper {
         PageFactory.initElements(driver, this);
 
     }
+
     @FindBy(css = ProductDetailsPagePaths.addToCartButton)
     WebElement addToCartButton;
     @FindBy(css = ProductDetailsPagePaths.cartIcon)
@@ -34,11 +35,18 @@ public class ProductDetailPageElements extends Helper {
 
     public void goToViewCartItems() {
 
+<<<<<<< HEAD
         Actions action = new Actions(driver);
         action.moveToElement(cartIcon).perform();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ProductDetailsPagePaths.viewCartItems)));
         element.click();
 
+=======
+        Waits.waitForElements(driver, cartIcon, 50);
+        cartIcon.click();
+        Waits.waitForElements(driver, viewCartItems, 50);
+        Waits.clickButton(driver, viewCartItems, 30);
+>>>>>>> origin/main
     }
 }

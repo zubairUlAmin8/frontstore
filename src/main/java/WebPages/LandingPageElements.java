@@ -34,11 +34,11 @@ public class LandingPageElements extends Helper {
 
 
     public void selectProductFromSearchBar() throws InterruptedException {
-        Waits.waitForElements(driver, searchResultListSingle,30);
-        List<WebElement> searchResultList=driver.findElements(By.cssSelector(LandingPagePaths.searchResultList));
+        Waits.waitForElements(driver, searchResultListSingle, 30);
+        List<WebElement> searchResultList = driver.findElements(By.cssSelector(LandingPagePaths.searchResultList));
         int random_index = RandomData.randomNumber(searchResultList.size());
-        int index=0;
-        for (WebElement element:searchResultList) {
+        int index = 0;
+        for (WebElement element : searchResultList) {
             if (3 == index) {
                 element.click();
             }

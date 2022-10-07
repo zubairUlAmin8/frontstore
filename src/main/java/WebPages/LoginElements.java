@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginElements extends Helper {
     public LoginElements(WebDriver driver) {
-        this.driver = driver;
+        Helper.driver = driver;
         PageFactory.initElements(driver, this);
     }
 

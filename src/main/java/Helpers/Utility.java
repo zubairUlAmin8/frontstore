@@ -23,9 +23,10 @@ public class Utility {
         reader.close();
         return value;
     }
+
     public static String getValue(String fileName, String key) throws IOException {
         prop = new Properties();
-        reader = new FileReader("src\\test\\java\\Config\\"+fileName+".properties");
+        reader = new FileReader("src\\test\\java\\Config\\" + fileName + ".properties");
         prop.load(reader);
         String value = prop.getProperty(key);
         reader.close();

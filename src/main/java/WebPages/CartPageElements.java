@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CartPageElements extends Helper {
     public CartPageElements(WebDriver driver) {
-        this.driver = driver;
+        Helper.driver = driver;
         PageFactory.initElements(driver, this);
 
     }

@@ -3,6 +3,7 @@ package Listeners;
 
 import org.testng.*;
 
+import java.util.List;
 import java.util.Set;
 
 public class TestListeners implements ITestListener, ITestResult {
@@ -155,6 +156,21 @@ public class TestListeners implements ITestListener, ITestResult {
     @Override
     public void setWasRetried(boolean b) {
 
+    }
+
+    @Override
+    public List<ITestNGMethod> getSkipCausedBy() {
+        return ITestResult.super.getSkipCausedBy();
+    }
+
+    @Override
+    public String id() {
+        return null;
+    }
+
+    @Override
+    public boolean isNotRunning() {
+        return ITestResult.super.isNotRunning();
     }
 
     @Override
