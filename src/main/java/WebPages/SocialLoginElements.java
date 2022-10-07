@@ -120,7 +120,8 @@ public class SocialLoginElements {
         String fakePhone = faker.number().digits(7);
         Waits.sendKeys(driver, otpEmailOrPhoneNumber, "+97150" + fakePhone, 30);
         Waits.clickButton(driver, continueButton, 30);
-        wait.until(ExpectedConditions.textToBePresentInElement(otpVerificationText, "OTP Verification"));
+        /*wait.until(ExpectedConditions.textToBePresentInElement(otpVerificationText, "OTP Verification"));*/
+        Waits.waitForTextToBePresentInElement(driver, otpVerificationText, "OTP Verification", 30);
         Waits.sendKeys(driver, otpCode, "1111", 30);
         Waits.clickButton(driver, confirmOTP, 30);
         Waits.clickButton(driver, accountButton, 30);
