@@ -33,4 +33,5 @@ public class Waits {
         wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         wait.until(ExpectedConditions.textToBePresentInElement(element, value));
     }
+
 }
