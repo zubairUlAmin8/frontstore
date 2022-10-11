@@ -22,13 +22,13 @@ public class VerifySocialLogin extends BaseTest {
     }
 
     @Test(priority = 3)
-    void otpWithEmail() throws InterruptedException {
+    void otpWithEmail() {
         socialLoginElements = new SocialLoginElements(driver);
         socialLoginElements.otpWithEmailVerify();
     }
 
     @Test(priority = 4)
-    void otpWithPhone() {
+    void otpWithPhone() throws InterruptedException {
         socialLoginElements = new SocialLoginElements(driver);
         socialLoginElements.otpWithPhoneVerify();
     }

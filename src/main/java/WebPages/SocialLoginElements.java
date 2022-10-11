@@ -2,33 +2,24 @@ package WebPages;
 
 import ElementPaths.LoginPagePaths;
 import Helpers.Helper;
-import Helpers.RandomData;
 import Helpers.Waits;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 
-import static Helpers.Helper.driver;
-import static Helpers.Helper.pause;
+import static Helpers.Helper.*;
 
 public class SocialLoginElements {
     // Object for Faker
     Faker faker = new Faker();
-    // Waiting for element
-    public WebDriverWait wait;
 
     // Constructor
     public SocialLoginElements(WebDriver driver) {
         Helper.driver = driver;
         PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(50));
     }
 
     // Initializing Xpath's
@@ -75,6 +66,10 @@ public class SocialLoginElements {
     @FindBy(css = LoginPagePaths.confirmOTP)
     WebElement confirmOTP;
 
+    // Admin OTP
+    @FindBy(xpath = LoginPagePaths.userPhoneOTP)
+    WebElement userPhoneOTP;
+
 
     // Facebook Login function
     public void facebookLoginVerify() {
@@ -91,9 +86,9 @@ public class SocialLoginElements {
     public void gmailLoginVerify() {
         homeSignInButton.click();
         Waits.clickButton(driver, gmailLoginButton, 30);
-        Waits.sendKeys(driver, gEmail, "talha.sajjad@cartlow.com", 30);
+        Waits.sendKeys(driver, gEmail, "andrewmilne181@gmail.com", 30);
         Waits.clickButton(driver, gNextEmail, 30);
-        Waits.sendKeys(driver, gPassword, "cartlow1122T", 30);
+        Waits.sendKeys(driver, gPassword, "cartlow1122A", 30);
         Waits.clickButton(driver, gNextPass, 30);
         Waits.clickButton(driver, accountButton, 30);
         Waits.clickButton(driver, logoutButton, 30);
@@ -106,7 +101,7 @@ public class SocialLoginElements {
         String fakeEmail = faker.internet().safeEmailAddress();
         Waits.sendKeys(driver, otpEmailOrPhoneNumber, fakeEmail, 30);
         Waits.clickButton(driver, continueButton, 30);
-        wait.until(ExpectedConditions.textToBePresentInElement(otpVerificationText, "OTP Verification"));
+        Waits.waitForTextToBePresentInElement(driver, otpVerificationText, "OTP Verification", 30);
         Waits.sendKeys(driver, otpCode, "1111", 30);
         Waits.clickButton(driver, confirmOTP, 30);
         Waits.clickButton(driver, accountButton, 30);
@@ -114,14 +109,21 @@ public class SocialLoginElements {
     }
 
     // Login with Phone OTP
-    public void otpWithPhoneVerify() {
+    public void otpWithPhoneVerify() throws InterruptedException {
         homeSignInButton.click();
         Waits.clickButton(driver, otpLoginButton, 30);
         String fakePhone = faker.number().digits(7);
         Waits.sendKeys(driver, otpEmailOrPhoneNumber, "+97150" + fakePhone, 30);
         Waits.clickButton(driver, continueButton, 30);
         Waits.waitForTextToBePresentInElement(driver, otpVerificationText, "OTP Verification", 30);
-        Waits.sendKeys(driver, otpCode, "1111", 30);
+        // Function calling for Tab switching
+        switchWindow();
+        driver.switchTo().window(childWindowId);
+        // Function calling for Admin Side
+        AdminOTPVerificationElements.adminOTPVerify();
+        String save = userPhoneOTP.getText();
+        driver.switchTo().window(parentWindowId);
+        Waits.sendKeys(driver, otpCode, save, 30);
         Waits.clickButton(driver, confirmOTP, 30);
         Waits.clickButton(driver, accountButton, 30);
         Waits.clickButton(driver, logoutButton, 30);

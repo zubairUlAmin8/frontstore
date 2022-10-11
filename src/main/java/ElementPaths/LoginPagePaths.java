@@ -31,6 +31,8 @@ public interface LoginPagePaths {
     String confirmOTP = "#confirm_otp";
     String otpCode = "//input[@name=\"code\"]";
     String otpVerificationText = "#otp-verification-modal > div > div > div > div > div > div > div.col-md-12 > div > h2";
+    // Admin OTP Xpath's
+    String userPhoneOTP = "//*[@id=\"main-wrapper\"]/div/div/div/div[2]/table/tbody/tr[1]/td[5]";
 
 
 }
