@@ -33,11 +33,13 @@ public class VerifyProductOrderWithCod extends BaseTest {
     void openProductByLink(String countryName) throws IOException {
         landingPageElements = new LandingPageElements(driver);
         if (countryName.equals("UAE")) {
+            driver.get(Utility.getValue("launch", "ProductUrl"));
 
         } else if (countryName.equals("KSA")) {
             driver.get(Utility.getValue("launch", "ProductUrl"));
 
         } else {
+            driver.get(Utility.getValue("launch", "ProductUrl"));
 
         }
         landingPageElements.selectCountry(countryName);
