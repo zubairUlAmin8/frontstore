@@ -22,7 +22,6 @@ public class VerifyProductOrderWithCard extends BaseTest {
 
     @Test(priority = 1)
     void openProductByLink() throws Exception {
-        MyScreenRecorder.startRecording("OrderWithCard");
         driver.get(Utility.getValue("launch", "ProductUrl"));
     }
 
@@ -70,8 +69,4 @@ public class VerifyProductOrderWithCard extends BaseTest {
         thankYouPageElements.verifyOrderPlacedOrNot();
     }
 
-    @Test(priority = 9)
-    void closeScreenRecord() throws Exception {
-        MyScreenRecorder.stopRecording();
-    }
 }

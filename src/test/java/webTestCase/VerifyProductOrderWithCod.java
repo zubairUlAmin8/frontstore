@@ -5,6 +5,7 @@ import WebPages.*;
 import base_test.BaseTest;
 import com.github.javafaker.Bool;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
@@ -27,10 +28,21 @@ public class VerifyProductOrderWithCod extends BaseTest {
         landingPageElements.searchProduct();
         landingPageElements.selectProductFromSearchBar();
     }
-
+    @Parameters("countryName")
     @Test(priority = 1)
-    void openProductByLink() throws IOException {
-        driver.get(Utility.getValue("launch", "ProductUrl"));
+    void openProductByLink(String countryName) throws IOException {
+        landingPageElements = new LandingPageElements(driver);
+        if (countryName.equals("UAE")) {
+            driver.get(Utility.getValue("launch", "ProductUrl"));
+
+        } else if (countryName.equals("KSA")) {
+            driver.get(Utility.getValue("launch", "ProductUrl"));
+
+        } else {
+            driver.get(Utility.getValue("launch", "ProductUrl"));
+
+        }
+        landingPageElements.selectCountry(countryName);
 
     }
 

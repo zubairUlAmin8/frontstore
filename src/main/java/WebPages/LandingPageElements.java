@@ -26,6 +26,8 @@ public class LandingPageElements extends Helper {
 
     @FindBy(css = LandingPagePaths.searchResultListSingle)
     WebElement searchResultListSingle;
+    @FindBy(css = LandingPagePaths.countryList)
+    WebElement countryList;
 
     public void searchProduct() {
 
@@ -43,6 +45,18 @@ public class LandingPageElements extends Helper {
                 element.click();
             }
             index++;
+        }
+    }
+
+    public void selectCountry(String countryName) {
+        Waits.waitForElements(driver, countryList, 30);
+        countryList.click();
+        List<WebElement> countryList = driver.findElements(By.cssSelector(LandingPagePaths.countryListItems));
+        for (WebElement element : countryList) {
+            if (element.getText().equals(countryName)) {
+                element.click();
+                break;
+            }
         }
     }
 }

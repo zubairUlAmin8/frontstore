@@ -6,16 +6,20 @@ import org.testng.annotations.*;
 
 public class BaseTest {
     @BeforeClass
-    public void initializeDriver() throws Exception {
+
+    public  void initializeDriver() throws Exception {
         Helper.createInstance();
-        MyScreenRecorder.startRecording("Valid Login");
-
     }
-
+    @BeforeTest
+    public void check() throws Exception {
+        String className = this.getClass().getSimpleName();
+        MyScreenRecorder.startRecording(className);
+        System.out.println(className);
+    }
     @AfterClass
     public void close() throws Exception {
-        System.out.println("Test End");
+        Helper.driver.quit();
         MyScreenRecorder.stopRecording();
-//        Helper.driver.quit();
+
     }
 }

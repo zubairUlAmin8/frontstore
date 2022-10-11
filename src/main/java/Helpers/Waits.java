@@ -29,4 +29,9 @@ public class Waits {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
+    public static void waitForTextToBePresentInElement(WebDriver driver, WebElement element, String value, int timeout) {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+        wait.until(ExpectedConditions.textToBePresentInElement(element, value));
+    }
+
 }
