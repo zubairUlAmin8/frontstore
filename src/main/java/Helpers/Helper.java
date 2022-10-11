@@ -1,11 +1,18 @@
 package Helpers;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class Helper {
     public static WebDriver driver;
+    public static String parentWindowId;
+    public static String childWindowId;
 
     public static void createInstance() throws IOException {
         String url = Utility.getValue("launch", "website");
@@ -17,5 +24,19 @@ public class Helper {
             Thread.sleep(950);
         }
     }
-
+    // Function for zoom out screen
+    public static void zoomOut(){
+        String zoomOutJS;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        zoomOutJS = "document.body.style.zoom='0.7'";
+        js.executeScript(zoomOutJS);
+    }
+    // Function for Window Switch
+    public static void switchWindow(){
+        driver.switchTo().newWindow(WindowType.TAB);
+        Set<String> handles = driver.getWindowHandles();
+        List<String> ls = new ArrayList<>(handles);
+        parentWindowId = ls.get(0);
+        childWindowId = ls.get(1);
+    }
 }
