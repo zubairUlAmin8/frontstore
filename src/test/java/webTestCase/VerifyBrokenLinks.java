@@ -27,4 +27,5 @@ public class VerifyBrokenLinks extends BaseTest {
         landingPageElements.verifyBrokenImages(driver);
     }
 
+
 }
