@@ -1,10 +1,7 @@
 package WebPages;
 
 import ElementPaths.LandingPagePaths;
-import Helpers.Helper;
-import Helpers.RandomData;
-import Helpers.Utility;
-import Helpers.Waits;
+import Helpers.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
 
 public class LandingPageElements extends Helper {
@@ -59,4 +57,18 @@ public class LandingPageElements extends Helper {
             }
         }
     }
-}
+
+    public void verifyBrokenLinks(WebDriver driver) {
+        this.driver=driver;
+       List<WebElement> urlLinks= LinkVerficationHelper.getAllPageLinks(driver);
+        LinkVerficationHelper.checkBrokenUrl(urlLinks);
+    }
+
+    public void verifyBrokenImages(WebDriver driver) {
+
+        this.driver=driver;
+        List<WebElement> allImagesLinks= LinkVerficationHelper.getAllImagesLinks(driver);
+        LinkVerficationHelper.checkBrokenImages(driver, allImagesLinks);
+
+    }
+    }
