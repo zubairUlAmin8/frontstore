@@ -1,9 +1,12 @@
 package webTestCase;
 
+import Helpers.TextFile;
 import WebPages.LandingPageElements;
 import base_test.BaseTest;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import static Helpers.Helper.driver;
 
@@ -25,5 +28,10 @@ public class VerifyBrokenLinks extends BaseTest {
         driver.get("https://cartlow.com/");
         landingPageElements=new LandingPageElements(driver);
         landingPageElements.verifyBrokenImages(driver);
+    }
+
+    @Test
+    void fileTest() throws IOException {
+
     }
 }

@@ -89,11 +89,14 @@ public class LinkVerficationHelper {
             if(httpURLConnect.getResponseCode()>=400)
             {
                 System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage()+"is a broken link");
+                TextFile.writeFile("brokenLink", linkUrl+" - "+httpURLConnect.getResponseMessage()+"is a broken link");
             }
 
             //Fetching and Printing the response code obtained
             else{
                 System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
+                TextFile.writeFile("brokenLink", linkUrl+" - "+httpURLConnect.getResponseMessage());
+
                 return true;
             }
         }catch (Exception e) {
