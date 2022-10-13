@@ -26,6 +26,4 @@ public class VerifyBrokenLinks extends BaseTest {
         landingPageElements=new LandingPageElements(driver);
         landingPageElements.verifyBrokenImages(driver);
     }
-
-
 }
