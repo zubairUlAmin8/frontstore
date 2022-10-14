@@ -58,7 +58,7 @@ public class LandingPageElements extends Helper {
         }
     }
 
-    public void verifyBrokenLinks(WebDriver driver) {
+    public void verifyBrokenLinks(WebDriver driver) throws IOException {
         this.driver=driver;
        List<WebElement> urlLinks= LinkVerficationHelper.getAllPageLinks(driver);
         LinkVerficationHelper.checkBrokenUrl(urlLinks);
