@@ -4,9 +4,9 @@ import ElementPaths.LoginPagePaths;
 import Helpers.Helper;
 import Helpers.Waits;
 import com.github.javafaker.Faker;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -27,46 +27,63 @@ public class SocialLoginElements {
 
     // Initializing Xpath's
     @FindBy(css = LoginPagePaths.homeSignInButton)
+    @CacheLookup
     WebElement homeSignInButton;
     @FindBy(css = LoginPagePaths.fbLoginButton)
+    @CacheLookup
     WebElement fbLoginButton;
     @FindBy(css = LoginPagePaths.gmailLoginButton)
+    @CacheLookup
     WebElement gmailLoginButton;
     @FindBy(css = LoginPagePaths.otpLoginButton)
+    @CacheLookup
     WebElement otpLoginButton;
     @FindBy(css = LoginPagePaths.accountButton)
+    @CacheLookup
     WebElement accountButton;
     @FindBy(css = LoginPagePaths.logoutButton)
+    @CacheLookup
     WebElement logoutButton;
 
     // Facebook Page Xpath's
     @FindBy(css = LoginPagePaths.fbEmail)
+    @CacheLookup
     WebElement fbEmail;
     @FindBy(css = LoginPagePaths.fbPassword)
+    @CacheLookup
     WebElement fbPassword;
     @FindBy(css = LoginPagePaths.fbButton)
+    @CacheLookup
     WebElement fbButton;
 
     // Gmail Page Xpath's
     @FindBy(css = LoginPagePaths.gEmail)
+    @CacheLookup
     WebElement gEmail;
     @FindBy(css = LoginPagePaths.gNextEmail)
+    @CacheLookup
     WebElement gNextEmail;
     @FindBy(css = LoginPagePaths.gPassword)
+    @CacheLookup
     WebElement gPassword;
     @FindBy(css = LoginPagePaths.gNextPass)
     WebElement gNextPass;
 
     // OTP Login
     @FindBy(css = LoginPagePaths.otpEmailOrPhoneNumber)
+    @CacheLookup
     WebElement otpEmailOrPhoneNumber;
     @FindBy(css = LoginPagePaths.continueButton)
+    @CacheLookup
     WebElement continueButton;
     @FindBy(css = LoginPagePaths.otpVerificationText)
+    @CacheLookup
     WebElement otpVerificationText;
     @FindBy(xpath = LoginPagePaths.otpCode)
+    @CacheLookup
     WebElement otpCode;
     @FindBy(css = LoginPagePaths.confirmOTP)
+    @CacheLookup
     WebElement confirmOTP;
 
     // Admin OTP
@@ -79,7 +96,7 @@ public class SocialLoginElements {
         homeSignInButton.click();
         Waits.clickButton(driver, fbLoginButton, 30);
         Waits.sendKeys(driver, fbEmail, "gahin45469@aregods.com", 30);
-        Waits.sendKeys(driver, fbPassword, "cartlow1122T", 30);
+        Waits.sendKeys(driver, fbPassword, "cartlow1122A", 30);
         Waits.clickButton(driver, fbButton, 30);
         Waits.clickButton(driver, accountButton, 30);
         Waits.clickButton(driver, logoutButton, 30);
