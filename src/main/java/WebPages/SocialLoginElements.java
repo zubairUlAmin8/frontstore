@@ -96,7 +96,7 @@ public class SocialLoginElements {
         homeSignInButton.click();
         Waits.clickButton(driver, fbLoginButton, 30);
         Waits.sendKeys(driver, fbEmail, "gahin45469@aregods.com", 30);
-        Waits.sendKeys(driver, fbPassword, "cartlow1122T", 30);
+        Waits.sendKeys(driver, fbPassword, "cartlow1122A", 30);
         Waits.clickButton(driver, fbButton, 30);
         Waits.clickButton(driver, accountButton, 30);
         Waits.clickButton(driver, logoutButton, 30);
