@@ -1,5 +1,6 @@
 package webTestCase;
 
+import Helpers.ExcelFileUtils;
 import Helpers.TextFile;
 import WebPages.LandingPageElements;
 import base_test.BaseTest;
@@ -32,6 +33,6 @@ public class VerifyBrokenLinks extends BaseTest {
 
     @Test
     void fileTest() throws IOException {
-
+        ExcelFileUtils.writeData(2, "data");
     }
 }
