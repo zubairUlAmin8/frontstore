@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 import static Helpers.Helper.driver;
 
@@ -17,14 +18,13 @@ public class VerifyBrokenLinks extends BaseTest {
 
         driver.get("https://cartlow.com/saudi/en");
         landingPageElements=new LandingPageElements(driver);
-        landingPageElements.verifyBrokenLinks(driver);
-
+        landingPageElements.verifyBrokenLinks(driver, "verifyBrokenLinksOnLandingPage");
     }
     @Test
-    void verifyBrokenImagesOnLandingPage() {
+    void verifyBrokenImagesOnLandingPage() throws IOException {
         driver.get("https://cartlow.com/");
         landingPageElements=new LandingPageElements(driver);
-        landingPageElements.verifyBrokenImages(driver);
+        landingPageElements.verifyBrokenImages(driver, "verifyBrokenImagesOnLandingPage");
     }
 
 

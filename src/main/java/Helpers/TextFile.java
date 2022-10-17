@@ -9,7 +9,7 @@ public class TextFile {
     public static void writeFile(String FileName, String Data) throws IOException {
         File file = new File("D:\\mywork\\automation\\Selenium\\frontstore\\Results\\BrokenLinksResults\\brokenLink.txt");
         if (file.exists()) {
-            System.out.println("File created Successfully");
+//            System.out.println("File created Successfully");
         } else {
             file.createNewFile();
         }

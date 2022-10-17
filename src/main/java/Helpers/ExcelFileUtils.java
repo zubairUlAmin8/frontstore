@@ -20,7 +20,7 @@ public class ExcelFileUtils {
     public static int rownumber=0;
 
     public static File createFile() throws IOException {
-        File file = new File("D:\\mywork\\automation\\Selenium\\frontstore\\Results\\BrokenLinksResults\\brokenLinks.xlsx");
+        File file = new File("D:\\mywork\\automation\\Selenium\\frontstore\\Results\\BrokenLinksResults\\verifyBrokenLinksOnLandingPage.xlsx");
         if (file.exists()) {
 //            System.out.println("file is already exits");
 
@@ -32,7 +32,7 @@ public class ExcelFileUtils {
 
     }
 
-    public static void writeData(List<LinkSheet> statusSheet) throws IOException {
+    public static void writeData(List<LinkSheet> statusSheet, String fileName) throws IOException {
          workbook = new XSSFWorkbook();
          sheet = workbook.createSheet();
 
@@ -43,7 +43,7 @@ public class ExcelFileUtils {
             writeBook(aBook, Row);
         }
 
-        try (FileOutputStream outputStream = new FileOutputStream("D:\\mywork\\automation\\Selenium\\frontstore\\Results\\BrokenLinksResults\\brokenLinks.xlsx")) {
+        try (FileOutputStream outputStream = new FileOutputStream(".\\Results\\BrokenLinksResults\\"+fileName+".xlsx")) {
             workbook.write(outputStream);
         }
     }
