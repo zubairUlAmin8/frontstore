@@ -100,9 +100,8 @@ public class LinkVerficationHelper {
 
             //Fetching and Printing the response code obtained
             else{
-//                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
+                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
                 TextFile.writeFile("brokenLink", linkUrl+" - "+httpURLConnect.getResponseMessage());
-
                 statusList.add(new LinkSheet(linkUrl, httpURLConnect.getResponseMessage()));
 
 
