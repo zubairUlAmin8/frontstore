@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/talha/IdeaProjects/FrontStore/target">
+        <classes>
+            <class name="webTestCase.VerifySignup"/>
+            <class name="webTestCase.VerifySocialLogin"/>
+            <class name="webTestCase.VerifyLoginScenarios"/>
+            <class name="webTestCase.VerifyForgotPassword"/>
+            <class name="webTestCase.VerifyCancelOrder"/>
+            <class name="webTestCase.VerifyProductOrderWithCard"/>
+            <class name="webTestCase.VerifyProductOrderWithCod"/>
+            <class name="webTestCase.VerifyProductOrderWithInstallment"/>
+            <class name="webTestCase.VerifyProductOrderWithTabby"/>
+            <class name="webTestCase.VerifyBrokenLinks"/>
+        </classes>
+    </test>
+</suite>
