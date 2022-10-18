@@ -40,10 +40,8 @@ public class VerifyProductOrderWithCod extends BaseTest {
 
         } else {
             driver.get(Utility.getValue("launch", "ProductUrl"));
-
         }
         landingPageElements.selectCountry(countryName);
-
     }
 
     @Test(priority = 2)

@@ -38,7 +38,6 @@ public class ForgotPasswordElements extends Helper {
         Waits.clickButton(driver, forgotPasswordButton, 30);
         Waits.sendKeys(driver, forgotEmail, "123", 30);
         Waits.clickButton(driver, getNewPasswordButton, 30);
-
     }
 
     // Empty Email
@@ -47,8 +46,4 @@ public class ForgotPasswordElements extends Helper {
         Waits.sendKeys(driver, forgotEmail, "", 30);
         Waits.clickButton(driver, getNewPasswordButton, 30);
     }
-    // Valid Email
-    /*public void validEmailScenario(){
-
-    }*/
 }
