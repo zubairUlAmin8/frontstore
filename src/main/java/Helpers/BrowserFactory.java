@@ -11,7 +11,7 @@ public class BrowserFactory {
 
     public static WebDriver startBrowser(String browserName, String url) {
 
-        if (browserName.equalsIgnoreCase("Chrome")) {
+        if (browserName.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -23,7 +23,6 @@ public class BrowserFactory {
         }
         driver.manage().window().maximize();
         driver.get(url);
-
         return driver;
     }
 }

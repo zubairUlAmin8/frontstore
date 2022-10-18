@@ -26,7 +26,7 @@ public class LinkVerficationHelper {
         return allImagesUrls;
     }
 
-    public static void checkBrokenImages(WebDriver driver, List<WebElement> allImagesUrls) {
+    public static void checkBrokenImages(WebDriver driver, List<WebElement> allImagesUrls, String fileName) throws IOException {
         //checking the links fetched.
         for(int index=0;index<allImagesUrls.size();index++)
         {
@@ -47,9 +47,10 @@ public class LinkVerficationHelper {
             catch (Exception e) {
                 System.out.println("Error Occured");
             }
+            ExcelFileUtils.writeData(statusList, fileName);
     }
     }
-    public static void checkBrokenUrl(List<WebElement> urlList) throws IOException {
+    public static void checkBrokenUrl(List<WebElement> urlList, String fileName) throws IOException {
 
         String link = "";
         Iterator<WebElement> urlListIterator= urlList.iterator();
@@ -60,7 +61,6 @@ public class LinkVerficationHelper {
 //        }
         int ok=0;
         int broken=0;
-
 
         for(int i=0;i<urlList.size();i++)
         {
@@ -74,14 +74,13 @@ public class LinkVerficationHelper {
                 broken++;
             }
         }
-        ExcelFileUtils.writeData(statusList);
+        System.out.println(fileName);
+        ExcelFileUtils.writeData(statusList, fileName);
         System.out.println("total Ok link"+ ok);
         System.out.println("total broken link"+ broken);
     }
-
     public static boolean verifyLinks(String linkUrl)
     {
-
         boolean status=false;
         try
         {
@@ -101,12 +100,9 @@ public class LinkVerficationHelper {
 
             //Fetching and Printing the response code obtained
             else{
-//                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
+                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
                 TextFile.writeFile("brokenLink", linkUrl+" - "+httpURLConnect.getResponseMessage());
-
                 statusList.add(new LinkSheet(linkUrl, httpURLConnect.getResponseMessage()));
-
-
 
 
                 return true;

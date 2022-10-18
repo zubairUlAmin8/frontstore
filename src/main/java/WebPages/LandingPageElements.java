@@ -58,17 +58,17 @@ public class LandingPageElements extends Helper {
         }
     }
 
-    public void verifyBrokenLinks(WebDriver driver) throws IOException {
+    public void verifyBrokenLinks(WebDriver driver,String fileName) throws IOException {
         this.driver=driver;
        List<WebElement> urlLinks= LinkVerficationHelper.getAllPageLinks(driver);
-        LinkVerficationHelper.checkBrokenUrl(urlLinks);
+        LinkVerficationHelper.checkBrokenUrl(urlLinks, fileName);
     }
 
-    public void verifyBrokenImages(WebDriver driver) {
+    public void verifyBrokenImages(WebDriver driver, String fileName) throws IOException {
 
         this.driver=driver;
         List<WebElement> allImagesLinks= LinkVerficationHelper.getAllImagesLinks(driver);
-        LinkVerficationHelper.checkBrokenImages(driver, allImagesLinks);
+        LinkVerficationHelper.checkBrokenImages(driver, allImagesLinks, fileName);
 
     }
     }

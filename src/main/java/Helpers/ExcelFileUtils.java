@@ -20,7 +20,7 @@ public class ExcelFileUtils {
     public static int rownumber=0;
 
     public static File createFile() throws IOException {
-        File file = new File("D:\\mywork\\automation\\Selenium\\frontstore\\Results\\BrokenLinksResults\\brokenLinks.xlsx");
+        File file = new File("D:\\mywork\\automation\\Selenium\\frontstore\\Results\\BrokenLinksResults\\verifyBrokenLinksOnLandingPage.xlsx");
         if (file.exists()) {
 //            System.out.println("file is already exits");
 
@@ -32,24 +32,34 @@ public class ExcelFileUtils {
 
     }
 
-    public static void writeData(List<LinkSheet> statusSheet) throws IOException {
+    public static void writeData(List<LinkSheet> statusSheet, String fileName) throws IOException {
          workbook = new XSSFWorkbook();
          sheet = workbook.createSheet();
 
+
         int rowCount = 0;
 
+        if (rowCount == 0) {
+            Row = sheet.createRow(rowCount);
+            Row.createCell(0).setCellValue("No# ");
+            Row.createCell(1).setCellValue("Link");
+            Row.createCell(2).setCellValue("Status");
+        }
         for (LinkSheet aBook : statusSheet) {
             Row = sheet.createRow(++rowCount);
             writeBook(aBook, Row);
         }
 
-        try (FileOutputStream outputStream = new FileOutputStream("D:\\mywork\\automation\\Selenium\\frontstore\\Results\\BrokenLinksResults\\brokenLinks.xlsx")) {
+        try (FileOutputStream outputStream = new FileOutputStream(".\\Results\\BrokenLinksResults\\"+fileName+".xlsx")) {
             workbook.write(outputStream);
         }
     }
     private static void writeBook(LinkSheet aBook, XSSFRow row) {
+        ++rownumber;
+         Cell = row.createCell(0);
+        Cell.setCellValue(rownumber);
 
-         Cell = row.createCell(1);
+        Cell = row.createCell(1);
         Cell.setCellValue(aBook.getLink());
 
         Cell = row.createCell(2);
