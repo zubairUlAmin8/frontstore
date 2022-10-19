@@ -69,6 +69,5 @@ public class LandingPageElements extends Helper {
         this.driver=driver;
         List<WebElement> allImagesLinks= LinkVerficationHelper.getAllImagesLinks(driver);
         LinkVerficationHelper.checkBrokenImages(driver, allImagesLinks, fileName);
-
     }
     }

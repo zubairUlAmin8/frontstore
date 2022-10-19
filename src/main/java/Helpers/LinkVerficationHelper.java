@@ -14,6 +14,7 @@ import java.util.List;
 
 public class LinkVerficationHelper {
     public static List<LinkSheet> statusList = new ArrayList<>();
+    public static List<LinkSheet> imgStatusList = new ArrayList<>();
     public static List<WebElement> getAllPageLinks(WebDriver driver) {
         List<WebElement> allUrls=driver.findElements(By.tagName("a"));
         return allUrls;
@@ -41,12 +42,16 @@ public class LinkVerficationHelper {
                     System.out.println("DISPLAY - OK");
                 }else {
                     System.out.println("DISPLAY - BROKEN");
+                    imgStatusList.add(new LinkSheet(imageURL, "BROKEN"));
+
+
                 }
             }
             catch (Exception e) {
                 System.out.println("Error Occured");
             }
             ExcelFileUtils.writeData(statusList, fileName);
+            ExcelFileUtils.writeData(imgStatusList, "VerifyBrokenImagesByDisplay");
     }
     }
     public static void checkBrokenUrl(List<WebElement> urlList, String fileName) throws IOException {
@@ -94,7 +99,6 @@ public class LinkVerficationHelper {
                 System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage()+"is a broken link");
                 TextFile.writeFile("brokenLink", linkUrl+" - "+httpURLConnect.getResponseMessage()+"is a broken link");
                 statusList.add(new LinkSheet(linkUrl, httpURLConnect.getResponseMessage()));
-
             }
 
             //Fetching and Printing the response code obtained

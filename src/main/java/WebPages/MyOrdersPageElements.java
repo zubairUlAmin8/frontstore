@@ -73,6 +73,4 @@ public class MyOrdersPageElements extends Helper {
 
     }
 
-
-
 }
