@@ -43,4 +43,9 @@ VerifyCancelOrder extends BaseTest {
     void cancelOrder(String orderNumber) throws InterruptedException {
         myOrdersPageElements.cancelOrder(orderNumber);
     }
+
+    @Test
+    void testmy() {
+        System.out.println("Test Resport");
+    }
 }
