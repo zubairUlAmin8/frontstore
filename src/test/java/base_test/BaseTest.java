@@ -9,17 +9,20 @@ public class BaseTest {
 
     public  void initializeDriver() throws Exception {
         Helper.createInstance();
-    }
-    @BeforeTest
-    public void check() throws Exception {
-        String className = this.getClass().getSimpleName();
+        String className = getTestClassName();
         MyScreenRecorder.startRecording(className);
-        System.out.println(className);
+
     }
+
+    public String getTestClassName() throws Exception {
+        String className = this.getClass().getSimpleName();
+        return className;
+    }
+
+
     @AfterClass
     public void close() throws Exception {
         Helper.driver.quit();
         MyScreenRecorder.stopRecording();
-
     }
 }
