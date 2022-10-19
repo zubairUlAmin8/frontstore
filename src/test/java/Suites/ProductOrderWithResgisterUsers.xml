@@ -5,9 +5,9 @@
         <parameter name="countryName" value="UAE" />
         <classes>
             <class name="webTestCase.VerifyProductOrderWithCod"/>
-<!--            <class name="webTestCase.VerifyProductOrderWithCard"/>-->
-<!--            <class name="webTestCase.VerifyProductOrderWithInstallment"/>-->
-<!--            <class name="webTestCase.VerifyProductOrderWithTabby"/>-->
+            <class name="webTestCase.VerifyProductOrderWithCard"/>
+            <class name="webTestCase.VerifyProductOrderWithInstallment"/>
+            <class name="webTestCase.VerifyProductOrderWithTabby"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

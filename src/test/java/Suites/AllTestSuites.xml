@@ -4,5 +4,6 @@
     <suite-files>
         <suite-file path="LogingTestScenerios.xml"></suite-file>
         <suite-file path="ProductOrderWithResgisterUsers.xml"></suite-file>
+        <suite-file path="BrockenLinksAndImages.xml"></suite-file>
     </suite-files>
 </suite>

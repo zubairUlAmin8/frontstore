@@ -12,7 +12,7 @@
             <class name="webTestCase.VerifyProductOrderWithCod"/>
             <class name="webTestCase.VerifyProductOrderWithInstallment"/>
             <class name="webTestCase.VerifyProductOrderWithTabby"/>
-            <class name="webTestCase.VerifyBrokenLinks"/>
+            <class name="webTestCase.VerifyBrokenLinksOnLandingPage"/>
         </classes>
     </test>
 </suite>

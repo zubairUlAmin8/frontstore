@@ -3,10 +3,7 @@
 <suite name="CartLow Daily Order Flow ">
     <test name="Regression">
         <classes>
-            <class name="webTestCase.VerifySignup"/>
-            <class name="webTestCase.VerifyForgotPassword"/>
-            <class name="webTestCase.VerifyLoginScenarios"/>
-            <class name="webTestCase.VerifySocialLogin"/>
+            <class name="webTestCase.VerifyBrokenLinksOnLandingPage"/>
 
         </classes>
     </test> <!-- Test -->

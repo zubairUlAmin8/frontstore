@@ -3,15 +3,13 @@ package webTestCase;
 
 import WebPages.LandingPageElements;
 import base_test.BaseTest;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.lang.reflect.Method;
 
 import static Helpers.Helper.driver;
 
-public class VerifyBrokenLinks extends BaseTest {
+public class VerifyBrokenLinksOnLandingPage extends BaseTest {
     LandingPageElements landingPageElements;
     @Test
     void verifyBrokenLinksOnLandingPage() throws IOException {
