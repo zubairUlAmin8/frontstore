@@ -13,12 +13,13 @@ public class LinkSheet {
     }
 
     public void print() {
-        System.out.println(link+"-------"+status);
+        System.out.println(link + "-------" + status);
     }
 
     public String getLink() {
         return link;
     }
+
     public String getStatus() {
         return status;
     }

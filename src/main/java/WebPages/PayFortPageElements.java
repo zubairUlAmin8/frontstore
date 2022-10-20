@@ -43,12 +43,12 @@ public class PayFortPageElements extends Helper {
         Waits.waitForElements(driver, countryDropDown, 60);
         countryDropDown.click();
         String countryName = Utility.getValue("Credentials", "country");
-        String countryPath = "//span[contains(text(), \"" +countryName +"\")]";
+        String countryPath = "//span[contains(text(), \"" + countryName + "\")]";
         driver.findElement(By.xpath(countryPath)).click();
 
         bankDropDown.click();
         String bankName = Utility.getValue("Credentials", "bankName");
-        String bankPath = "//span[contains(text(), \"" +bankName +"\")]";
+        String bankPath = "//span[contains(text(), \"" + bankName + "\")]";
         driver.findElement(By.xpath(bankPath)).click();
 
         installmentTypeDropDown.click();

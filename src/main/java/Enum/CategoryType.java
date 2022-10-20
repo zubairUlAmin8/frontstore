@@ -1,8 +1,10 @@
 package Enum;
 
-/**A Java Enum is a special Java type used to define collections of constants.*/
+/**
+ * A Java Enum is a special Java type used to define collections of constants.
+ */
 public enum CategoryType {
-	REGRESSION, 
-	SMOKE, 
-	SANITY
+    REGRESSION,
+    SMOKE,
+    SANITY
 }

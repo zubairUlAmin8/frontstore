@@ -45,7 +45,7 @@ public enum BrowserFactory {
         @Override
         public WebDriver createDriver() {
             WebDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
-            
+
             return new FirefoxDriver(getOptions());
         }
 
