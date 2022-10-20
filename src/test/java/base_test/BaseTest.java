@@ -11,7 +11,6 @@ public class BaseTest {
         Helper.createInstance();
         String className = getTestClassName();
         MyScreenRecorder.startRecording(className);
-
     }
 
     public String getTestClassName() throws Exception {
