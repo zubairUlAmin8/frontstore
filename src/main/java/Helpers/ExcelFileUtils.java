@@ -58,10 +58,8 @@ public class ExcelFileUtils {
         ++rownumber;
          Cell = row.createCell(0);
         Cell.setCellValue(rownumber);
-
         Cell = row.createCell(1);
         Cell.setCellValue(aBook.getLink());
-
         Cell = row.createCell(2);
         Cell.setCellValue(aBook.getStatus());
 

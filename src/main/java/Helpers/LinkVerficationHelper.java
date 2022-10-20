@@ -43,8 +43,6 @@ public class LinkVerficationHelper {
                 }else {
                     System.out.println("DISPLAY - BROKEN");
                     imgStatusList.add(new LinkSheet(imageURL, "BROKEN"));
-
-
                 }
             }
             catch (Exception e) {
@@ -106,8 +104,6 @@ public class LinkVerficationHelper {
                 System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
                 TextFile.writeFile("brokenLink", linkUrl+" - "+httpURLConnect.getResponseMessage());
                 statusList.add(new LinkSheet(linkUrl, httpURLConnect.getResponseMessage()));
-
-
                 return true;
             }
         }catch (Exception e) {
