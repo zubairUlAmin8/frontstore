@@ -19,20 +19,23 @@ public class Helper {
         String browser = Utility.getValue("launch", "browser");
         driver = BrowserFactory.startBrowser(browser, url);
     }
+
     public static void pause(int j) throws InterruptedException {
         for (int i = 0; i < j; i++) {
             Thread.sleep(950);
         }
     }
+
     // Function for zoom out screen
-    public static void zoomOut(){
+    public static void zoomOut() {
         String zoomOutJS;
         JavascriptExecutor js = (JavascriptExecutor) driver;
         zoomOutJS = "document.body.style.zoom='0.7'";
         js.executeScript(zoomOutJS);
     }
+
     // Function for Window Switch
-    public static void switchWindow(){
+    public static void switchWindow() {
         driver.switchTo().newWindow(WindowType.TAB);
         Set<String> handles = driver.getWindowHandles();
         List<String> ls = new ArrayList<>(handles);

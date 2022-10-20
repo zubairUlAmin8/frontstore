@@ -17,7 +17,7 @@ public class ExcelFileUtils {
     private static XSSFCell Cell;
 
     private static XSSFRow Row;
-    public static int rownumber=0;
+    public static int rownumber = 0;
 
     public static File createFile() throws IOException {
         File file = new File("D:\\mywork\\automation\\Selenium\\frontstore\\Results\\BrokenLinksResults\\verifyBrokenLinksOnLandingPage.xlsx");
@@ -33,8 +33,8 @@ public class ExcelFileUtils {
     }
 
     public static void writeData(List<LinkSheet> statusSheet, String fileName) throws IOException {
-         workbook = new XSSFWorkbook();
-         sheet = workbook.createSheet();
+        workbook = new XSSFWorkbook();
+        sheet = workbook.createSheet();
 
 
         int rowCount = 0;
@@ -50,13 +50,14 @@ public class ExcelFileUtils {
             writeBook(aBook, Row);
         }
 
-        try (FileOutputStream outputStream = new FileOutputStream(".\\Results\\BrokenLinksResults\\"+fileName+".xlsx")) {
+        try (FileOutputStream outputStream = new FileOutputStream(".\\Results\\BrokenLinksResults\\" + fileName + ".xlsx")) {
             workbook.write(outputStream);
         }
     }
+
     private static void writeBook(LinkSheet aBook, XSSFRow row) {
         ++rownumber;
-         Cell = row.createCell(0);
+        Cell = row.createCell(0);
         Cell.setCellValue(rownumber);
         Cell = row.createCell(1);
         Cell.setCellValue(aBook.getLink());

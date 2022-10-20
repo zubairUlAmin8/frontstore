@@ -20,7 +20,7 @@ public class LoginElements extends Helper {
     WebElement passwordInputField;
     @FindBy(css = LoginPagePaths.signInButton)
     WebElement signInButton;
-     @FindBy(xpath = LoginPagePaths.accountIcon)
+    @FindBy(xpath = LoginPagePaths.accountIcon)
     WebElement accountIcon;
 
     public void login() {

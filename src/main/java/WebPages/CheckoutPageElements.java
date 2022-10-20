@@ -64,7 +64,9 @@ public class CheckoutPageElements extends Helper {
     public void selectCreditCardWithInstallment() {
         Waits.waitForElements(driver, creditCardWithInstallmentRadio, 30);
         creditCardWithInstallmentRadio.click();
-    }  public void selectInstallmentWithTabby() {
+    }
+
+    public void selectInstallmentWithTabby() {
         Waits.waitForElements(driver, installmentWithTabbyRadioButton, 30);
         installmentWithTabbyRadioButton.click();
     }
