@@ -8,7 +8,7 @@ import annotations.FrameworkAnnotation;
 import com.aventstack.extentreports.Status;
 import driver.DriverManager;
 import org.testng.*;
-
+import utils.EmailSendUtils;
 
 
 import static Constants.FrameworkConstants.*;
@@ -63,7 +63,6 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         System.out.println(" ");
         Log.info("Start suite: " + iSuite.getName());
         iSuite.setAttribute("WebDriver", DriverManager.getDriver());
-//        //Gọi hàm startRecord video trong CaptureHelpers class
 //        if (VIDEO_RECORD.toLowerCase().trim().equals(YES)) {
 //            CaptureHelpers.startRecord(iSuite.getName());
 //        }
@@ -76,7 +75,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         ExtentReportManager.flushReports();
 //        ZipUtils.zip();
 //        TelegramManager.sendReportPath();
-//        EmailSendUtils.sendEmail(count_totalTCs, count_passedTCs, count_failedTCs, count_skippedTCs);
+        EmailSendUtils.sendEmail(count_totalTCs, count_passedTCs, count_failedTCs, count_skippedTCs);
 
 //        if (VIDEO_RECORD.toLowerCase().trim().equals(YES)) {
 //            CaptureHelpers.stopRecord();
