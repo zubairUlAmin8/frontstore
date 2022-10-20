@@ -24,11 +24,9 @@ public class PropertiesHelpers {
     @Step("Loaded all properties files")
     public static Properties loadAllFiles() {
         LinkedList<String> files = new LinkedList<>();
-        // Add tất cả file Properties vào đây theo mẫu
         files.add("src/test/resources/config/config.properties");
         files.add("src/test/resources/config/datatest.properties");
         files.add("src/test/resources/objects/crm_locators.properties");
-
         try {
             properties = new Properties();
 
