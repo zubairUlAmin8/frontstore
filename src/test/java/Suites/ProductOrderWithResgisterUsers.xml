@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CartLow Daily Order Flow ">
+    <test name="Regression">
+        <parameter name="countryName" value="UAE" />
+        <classes>
+            <class name="webTestCase.VerifyProductOrderWithCod"/>
+            <class name="webTestCase.VerifyProductOrderWithCard"/>
+            <class name="webTestCase.VerifyProductOrderWithInstallment"/>
+            <class name="webTestCase.VerifyProductOrderWithTabby"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
