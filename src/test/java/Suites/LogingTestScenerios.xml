@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CartLow Daily Order Flow ">
+    <test name="Regression">
+        <classes>
+            <class name="webTestCase.VerifySignup"/>
+            <class name="webTestCase.VerifyForgotPassword"/>
+            <class name="webTestCase.VerifyLoginScenarios"/>
+            <class name="webTestCase.VerifySocialLogin"/>
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

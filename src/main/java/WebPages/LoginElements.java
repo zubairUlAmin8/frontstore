@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginElements extends Helper {
     public LoginElements(WebDriver driver) {
-        this.driver = driver;
+        Helper.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -20,10 +20,16 @@ public class LoginElements extends Helper {
     WebElement passwordInputField;
     @FindBy(css = LoginPagePaths.signInButton)
     WebElement signInButton;
+    @FindBy(xpath = LoginPagePaths.accountIcon)
+    WebElement accountIcon;
 
     public void login() {
         Waits.sendKeys(driver, emailOrNumberInputField, "zubairul.amin@cartlow.com", 30);
         Waits.sendKeys(driver, passwordInputField, "123123123", 30);
         signInButton.click();
+    }
+
+    public void clickOnAccountIcon() {
+        accountIcon.click();
     }
 }
