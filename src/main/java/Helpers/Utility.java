@@ -48,12 +48,13 @@ public class Utility {
         out.close();
 
     }
-    public static String getXpath(WebElement self, WebElement ancestor){
+
+    public static String getXpath(WebElement self, WebElement ancestor) {
         int a = ancestor.findElements(By.xpath("./ancestor::*")).size();
         int s = self.findElements(By.xpath("./ancestor::*")).size();
         String path = "";
         WebElement current = self;
-        for(int i = s - a; i > 0; i--){
+        for (int i = s - a; i > 0; i--) {
             String tag = current.getTagName();
             int lvl = current.findElements(By.xpath("./preceding-sibling::" + tag)).size() + 1;
             path = String.format("/%s[%d]%s", tag, lvl, path);
@@ -61,7 +62,5 @@ public class Utility {
         }
         return path;
     }
-
-
 }
 

@@ -19,5 +19,4 @@ public @interface FrameworkAnnotation {
     public CategoryType[] category();
 
 
-
 }

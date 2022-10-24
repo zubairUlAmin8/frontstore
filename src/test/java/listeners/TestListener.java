@@ -129,6 +129,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     public void onTestSuccess(ITestResult iTestResult) {
         Log.info("Test case: " + getTestName(iTestResult) + " is passed.");
         count_passedTCs = count_passedTCs + 1;
+        System.out.println("my case passes");
 
         if (SCREENSHOT_PASSED_STEPS.equals(YES)) {
 //            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
@@ -145,11 +146,12 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
+
         Log.error("Test case: " + getTestName(iTestResult) + " is failed.");
         count_failedTCs = count_failedTCs + 1;
 
         if (SCREENSHOT_FAILED_STEPS.equals(YES)) {
-//            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
+            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
         }
 
         //Allure report screenshot file and log
@@ -162,7 +164,6 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         ExtentReportManager.addScreenShot(Status.FAIL, getTestName(iTestResult));
         ExtentReportManager.logMessage(Status.FAIL, "Test case: " + getTestName(iTestResult) + " is failed.");
         ExtentReportManager.logMessage(Status.FAIL, iTestResult.getThrowable());
-
         if (VIDEO_RECORD.toLowerCase().trim().equals(YES)) {
 //            screenRecorder.stopRecording(true);
         }
@@ -171,6 +172,8 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
+        System.out.println("my case skip");
+
         Log.warn("Test case: " + getTestName(iTestResult) + " is skipped.");
         count_skippedTCs = count_skippedTCs + 1;
 

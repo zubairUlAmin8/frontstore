@@ -1,0 +1,51 @@
+[ERROR] 10-10-2022 18:48:31 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 10-10-2022 18:48:31 [main] [Log] - Loaded all properties files.
+[ERROR] 10-10-2022 18:48:31 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 10-10-2022 18:48:31 [main] [AllureLifecycle] - Could not stop step: no step running
+[ERROR] 10-10-2022 18:48:31 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 10-10-2022 18:48:31 [main] [Log] - Loaded all properties files.
+[ERROR] 10-10-2022 18:48:31 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 10-10-2022 18:48:31 [main] [AllureLifecycle] - Could not stop step: no step running
+[INFO] 10-10-2022 18:48:32 [main] [Log] - Start suite: Default Suite
+[ERROR] 10-10-2022 18:48:32 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 10-10-2022 18:48:32 [main] [Log] - Loaded all properties files.
+[ERROR] 10-10-2022 18:48:32 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 10-10-2022 18:48:32 [main] [AllureLifecycle] - Could not stop step: no step running
+[INFO] 10-10-2022 18:48:32 [main] [Log] - Excel Path: D:\mywork\automation\COLLECTION\AutomationFrameworkSelenium-main\src/test/resources/testdata/ClientsDataExcel.xlsx
+[INFO] 10-10-2022 18:48:34 [main] [Log] - Row: 2 - Column: 6
+[INFO] 10-10-2022 18:48:34 [main] [Log] - StartRow: 1 - EndRow: 2
+[INFO] 10-10-2022 18:48:38 [TestNG-PoolService-0] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 10-10-2022 18:48:39 [TestNG-PoolService-0] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 10-10-2022 18:48:41 [TestNG-PoolService-1] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 10-10-2022 18:48:41 [TestNG-PoolService-1] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 10-10-2022 18:48:44 [TestNG-PoolService-1] [Log] - Test case: signInTestDataProvider test is starting...
+[INFO] 10-10-2022 18:48:44 [TestNG-PoolService-0] [Log] - Test case: signInTestDataProvider test is starting...
+[INFO] 10-10-2022 18:49:05 [TestNG-PoolService-0] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 10-10-2022 18:49:05 [TestNG-PoolService-0] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 10-10-2022 18:49:05 [TestNG-PoolService-0] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 10-10-2022 18:49:06 [TestNG-PoolService-1] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 10-10-2022 18:49:06 [TestNG-PoolService-1] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 10-10-2022 18:49:06 [TestNG-PoolService-1] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 10-10-2022 18:49:11 [TestNG-PoolService-1] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 10-10-2022 18:49:11 [TestNG-PoolService-1] [Log] - Test case: signInTestDataProvider is passed.
+[INFO] 10-10-2022 18:49:11 [TestNG-PoolService-0] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 10-10-2022 18:49:11 [TestNG-PoolService-0] [Log] - Test case: signInTestDataProvider is passed.
+[INFO] 10-10-2022 18:49:11 [main] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 10-10-2022 18:49:11 [main] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 10-10-2022 18:49:12 [main] [Log] - Test case: signInTestAdminRole test is starting...
+[INFO] 10-10-2022 18:49:13 [main] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 10-10-2022 18:49:17 [main] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 10-10-2022 18:49:17 [main] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 10-10-2022 18:49:17 [main] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 10-10-2022 18:49:22 [main] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 10-10-2022 18:49:22 [main] [Log] - Test case: signInTestAdminRole is passed.
+[INFO] 10-10-2022 18:49:22 [main] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 10-10-2022 18:49:22 [main] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 10-10-2022 18:49:23 [main] [Log] - Test case: signInTestClientRole test is starting...
+[INFO] 10-10-2022 18:49:23 [main] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 10-10-2022 18:49:34 [main] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 10-10-2022 18:49:34 [main] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 10-10-2022 18:49:34 [main] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 10-10-2022 18:49:37 [main] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 10-10-2022 18:49:37 [main] [Log] - Test case: signInTestClientRole is passed.
+[INFO] 10-10-2022 18:49:38 [main] [Log] - End suite testing Default Suite

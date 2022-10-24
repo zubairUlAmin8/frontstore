@@ -15,13 +15,13 @@ import java.util.List;
 
 public class MyOrdersPageElements extends Helper {
     public MyOrdersPageElements(WebDriver driver) {
-        this.driver = driver;
+        Helper.driver = driver;
         PageFactory.initElements(driver,this);
     }
     LoginElements loginElements;
 
     public void openMyOrderList() throws InterruptedException {
-        Thread.sleep(6000);
+        pause(7);
         Actions actions = new Actions(driver);
         loginElements = new LoginElements(driver);
         WebElement element = driver.findElement(By.cssSelector("a.topbar-link.dropdown-toggle>span[class=\"text username-limit\"]"));
