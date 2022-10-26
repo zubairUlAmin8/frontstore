@@ -4,6 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,5 +42,13 @@ public class Helper {
         List<String> ls = new ArrayList<>(handles);
         parentWindowId = ls.get(0);
         childWindowId = ls.get(1);
+    }
+    public static String getCurrentDir() {
+        String current = System.getProperty("user.dir") + File.separator;
+        return current;
+    }
+
+    public static WebDriver getDriver() {
+        return driver;
     }
 }

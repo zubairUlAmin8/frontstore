@@ -1,0 +1,102 @@
+[ERROR] 20-10-2022 01:00:44 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 20-10-2022 01:00:44 [main] [Log] - Loaded all properties files.
+[ERROR] 20-10-2022 01:00:44 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 20-10-2022 01:00:44 [main] [AllureLifecycle] - Could not stop step: no step running
+[ERROR] 20-10-2022 01:00:44 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 20-10-2022 01:00:44 [main] [Log] - Loaded all properties files.
+[ERROR] 20-10-2022 01:00:44 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 20-10-2022 01:00:44 [main] [AllureLifecycle] - Could not stop step: no step running
+[INFO] 20-10-2022 01:00:45 [main] [Log] - Start suite: Regression Test CRM
+[ERROR] 20-10-2022 01:00:45 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 20-10-2022 01:00:45 [main] [Log] - Loaded all properties files.
+[ERROR] 20-10-2022 01:00:45 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 20-10-2022 01:00:45 [main] [AllureLifecycle] - Could not stop step: no step running
+[INFO] 20-10-2022 01:00:45 [main] [Log] - Excel Path: D:\mywork\automation\COLLECTION\AutomationFrameworkSelenium-main\src/test/resources/testdata/ClientsDataExcel.xlsx
+[INFO] 20-10-2022 01:00:47 [main] [Log] - Row: 3 - Column: 13
+[INFO] 20-10-2022 01:00:47 [main] [Log] - StartRow: 1 - EndRow: 2
+[INFO] 20-10-2022 01:00:49 [TestNG-PoolService-1] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 20-10-2022 01:00:49 [TestNG-PoolService-0] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 20-10-2022 01:00:49 [TestNG-PoolService-0] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 20-10-2022 01:00:49 [TestNG-PoolService-1] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 20-10-2022 01:00:55 [TestNG-PoolService-0] [Log] - Test case: testAddClient test is starting...
+[INFO] 20-10-2022 01:00:55 [TestNG-PoolService-1] [Log] - Test case: testAddClient test is starting...
+[INFO] 20-10-2022 01:00:56 [TestNG-PoolService-0] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 20-10-2022 01:00:56 [TestNG-PoolService-1] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 20-10-2022 01:00:58 [TestNG-PoolService-0] [Log] - Open URL: https://www.google.com/
+[INFO] 20-10-2022 01:00:58 [TestNG-PoolService-1] [Log] - Open URL: https://www.google.com/
+[INFO] 20-10-2022 01:00:58 [TestNG-PoolService-1] [Log] - Current URL: https://www.google.com/
+[INFO] 20-10-2022 01:00:58 [TestNG-PoolService-0] [Log] - Current URL: https://www.google.com/
+[ERROR] 20-10-2022 01:00:58 [TestNG-PoolService-1] [Log] - Test case: testAddClient is failed.
+[ERROR] 20-10-2022 01:00:58 [TestNG-PoolService-0] [Log] - Test case: testAddClient is failed.
+[INFO] 20-10-2022 01:00:58 [TestNG-PoolService-0] [Log] - Driver for Screenshot: ChromeDriver: chrome on WINDOWS (b7b0a0f0aeddb7e3b0aa3fb690303201)
+[INFO] 20-10-2022 01:00:58 [TestNG-PoolService-1] [Log] - Driver for Screenshot: ChromeDriver: chrome on WINDOWS (946ad5644e7a6f56dd9a3aad58e9377b)
+[ERROR] 20-10-2022 01:00:58 [TestNG-PoolService-1] [Log] - FAILED !! Screenshot for test case: testAddClient
+[ERROR] 20-10-2022 01:00:58 [TestNG-PoolService-1] [Log] - java.lang.AssertionError: The url of sign in page not match. expected [true] but found [false]
+[INFO] 20-10-2022 01:00:58 [TestNG-PoolService-0] [Log] - Screenshot taken: testAddClient
+[INFO] 20-10-2022 01:00:58 [TestNG-PoolService-0] [Log] - Screenshot taken current URL: https://www.google.com/
+[ERROR] 20-10-2022 01:00:58 [TestNG-PoolService-0] [Log] - FAILED !! Screenshot for test case: testAddClient
+[ERROR] 20-10-2022 01:00:58 [TestNG-PoolService-0] [Log] - java.lang.AssertionError: The url of sign in page not match. expected [true] but found [false]
+[INFO] 20-10-2022 01:00:59 [main] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 20-10-2022 01:00:59 [main] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 20-10-2022 01:01:00 [main] [Log] - Test case: testSearchClient test is starting...
+[INFO] 20-10-2022 01:01:00 [main] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 20-10-2022 01:01:02 [main] [Log] - Open URL: https://www.google.com/
+[INFO] 20-10-2022 01:01:02 [main] [Log] - Current URL: https://www.google.com/
+[ERROR] 20-10-2022 01:01:02 [main] [Log] - Test case: testSearchClient is failed.
+[INFO] 20-10-2022 01:01:02 [main] [Log] - Driver for Screenshot: ChromeDriver: chrome on WINDOWS (b87a4b5c0e2389c01ea9bf1ead5d196a)
+[INFO] 20-10-2022 01:01:02 [main] [Log] - Screenshot taken: testSearchClient
+[INFO] 20-10-2022 01:01:02 [main] [Log] - Screenshot taken current URL: https://www.google.com/
+[ERROR] 20-10-2022 01:01:02 [main] [Log] - FAILED !! Screenshot for test case: testSearchClient
+[ERROR] 20-10-2022 01:01:02 [main] [Log] - java.lang.AssertionError: The url of sign in page not match. expected [true] but found [false]
+[INFO] 20-10-2022 01:01:02 [main] [Log] - End suite testing Regression Test CRM
+[ERROR] 20-10-2022 10:11:26 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 20-10-2022 10:11:26 [main] [Log] - Loaded all properties files.
+[ERROR] 20-10-2022 10:11:26 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 20-10-2022 10:11:26 [main] [AllureLifecycle] - Could not stop step: no step running
+[ERROR] 20-10-2022 10:11:26 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 20-10-2022 10:11:26 [main] [Log] - Loaded all properties files.
+[ERROR] 20-10-2022 10:11:26 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 20-10-2022 10:11:26 [main] [AllureLifecycle] - Could not stop step: no step running
+[INFO] 20-10-2022 10:11:27 [main] [Log] - Start suite: Regression Test CRM
+[ERROR] 20-10-2022 10:11:27 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 20-10-2022 10:11:27 [main] [Log] - Loaded all properties files.
+[ERROR] 20-10-2022 10:11:27 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 20-10-2022 10:11:27 [main] [AllureLifecycle] - Could not stop step: no step running
+[INFO] 20-10-2022 10:11:27 [main] [Log] - Excel Path: D:\mywork\automation\COLLECTION\AutomationFrameworkSelenium-main\src/test/resources/testdata/ClientsDataExcel.xlsx
+[INFO] 20-10-2022 10:11:28 [main] [Log] - Row: 3 - Column: 13
+[INFO] 20-10-2022 10:11:28 [main] [Log] - StartRow: 1 - EndRow: 2
+[INFO] 20-10-2022 10:11:30 [TestNG-PoolService-0] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 20-10-2022 10:11:30 [TestNG-PoolService-1] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 20-10-2022 10:11:30 [TestNG-PoolService-0] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 20-10-2022 10:11:30 [TestNG-PoolService-1] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 20-10-2022 10:11:34 [TestNG-PoolService-0] [Log] - Test case: testAddClient test is starting...
+[INFO] 20-10-2022 10:11:34 [TestNG-PoolService-1] [Log] - Test case: testAddClient test is starting...
+[INFO] 20-10-2022 10:11:34 [TestNG-PoolService-1] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 20-10-2022 10:11:34 [TestNG-PoolService-0] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 20-10-2022 10:11:36 [TestNG-PoolService-0] [Log] - Open URL: https://www.google.com/
+[INFO] 20-10-2022 10:11:36 [TestNG-PoolService-1] [Log] - Open URL: https://www.google.com/
+[INFO] 20-10-2022 10:11:36 [TestNG-PoolService-1] [Log] - Current URL: https://www.google.com/
+[INFO] 20-10-2022 10:11:36 [TestNG-PoolService-0] [Log] - Current URL: https://www.google.com/
+[ERROR] 20-10-2022 10:11:36 [TestNG-PoolService-0] [Log] - Test case: testAddClient is failed.
+[ERROR] 20-10-2022 10:11:36 [TestNG-PoolService-1] [Log] - Test case: testAddClient is failed.
+[INFO] 20-10-2022 10:11:36 [TestNG-PoolService-1] [Log] - Driver for Screenshot: ChromeDriver: chrome on WINDOWS (2f35bb0fa84a7a6160864153403d462d)
+[INFO] 20-10-2022 10:11:36 [TestNG-PoolService-0] [Log] - Driver for Screenshot: ChromeDriver: chrome on WINDOWS (44c6d65045cb860efa35ee0b12c7c8b7)
+[ERROR] 20-10-2022 10:11:36 [TestNG-PoolService-0] [Log] - FAILED !! Screenshot for test case: testAddClient
+[ERROR] 20-10-2022 10:11:36 [TestNG-PoolService-0] [Log] - java.lang.AssertionError: The url of sign in page not match. expected [true] but found [false]
+[INFO] 20-10-2022 10:11:36 [TestNG-PoolService-1] [Log] - Screenshot taken: testAddClient
+[INFO] 20-10-2022 10:11:36 [TestNG-PoolService-1] [Log] - Screenshot taken current URL: https://www.google.com/
+[ERROR] 20-10-2022 10:11:36 [TestNG-PoolService-1] [Log] - FAILED !! Screenshot for test case: testAddClient
+[ERROR] 20-10-2022 10:11:36 [TestNG-PoolService-1] [Log] - java.lang.AssertionError: The url of sign in page not match. expected [true] but found [false]
+[INFO] 20-10-2022 10:11:36 [main] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 20-10-2022 10:11:36 [main] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 20-10-2022 10:11:37 [main] [Log] - Test case: testSearchClient test is starting...
+[INFO] 20-10-2022 10:11:37 [main] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 20-10-2022 10:11:39 [main] [Log] - Open URL: https://www.google.com/
+[INFO] 20-10-2022 10:11:39 [main] [Log] - Current URL: https://www.google.com/
+[ERROR] 20-10-2022 10:11:39 [main] [Log] - Test case: testSearchClient is failed.
+[INFO] 20-10-2022 10:11:39 [main] [Log] - Driver for Screenshot: ChromeDriver: chrome on WINDOWS (c186d36474547f4d2349afb1346017c3)
+[INFO] 20-10-2022 10:11:39 [main] [Log] - Screenshot taken: testSearchClient
+[INFO] 20-10-2022 10:11:39 [main] [Log] - Screenshot taken current URL: https://www.google.com/
+[ERROR] 20-10-2022 10:11:39 [main] [Log] - FAILED !! Screenshot for test case: testSearchClient
+[ERROR] 20-10-2022 10:11:39 [main] [Log] - java.lang.AssertionError: The url of sign in page not match. expected [true] but found [false]
+[INFO] 20-10-2022 10:11:39 [main] [Log] - End suite testing Regression Test CRM

@@ -4,6 +4,7 @@ import Helpers.MyScreenRecorder;
 import Helpers.Utility;
 import WebPages.*;
 import base_test.BaseTest;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
