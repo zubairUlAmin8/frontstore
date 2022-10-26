@@ -1,0 +1,116 @@
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 03-10-2022 17:53:13 [main] [Log] - Loaded all properties files.
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not stop step: no step running
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 03-10-2022 17:53:13 [main] [Log] - Loaded all properties files.
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not stop step: no step running
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 03-10-2022 17:53:13 [main] [Log] - Loaded all properties files.
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 03-10-2022 17:53:13 [main] [AllureLifecycle] - Could not stop step: no step running
+[INFO] 03-10-2022 17:53:14 [main] [Log] - Start suite: Regression Tests Parallel
+[ERROR] 03-10-2022 17:53:14 [TestNG-test=Edge execution Client Test-1] [AllureLifecycle] - Could not start step: no test case running
+[ERROR] 03-10-2022 17:53:14 [TestNG-test=Chrome execution Client Test-1] [AllureLifecycle] - Could not start step: no test case running
+[INFO] 03-10-2022 17:53:14 [TestNG-test=Edge execution Client Test-1] [Log] - Loaded all properties files.
+[INFO] 03-10-2022 17:53:14 [TestNG-test=Chrome execution Client Test-1] [Log] - Loaded all properties files.
+[ERROR] 03-10-2022 17:53:14 [TestNG-test=Edge execution Client Test-1] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 03-10-2022 17:53:14 [TestNG-test=Chrome execution Client Test-1] [AllureLifecycle] - Could not update step: no step running
+[ERROR] 03-10-2022 17:53:14 [TestNG-test=Edge execution Client Test-1] [AllureLifecycle] - Could not stop step: no step running
+[ERROR] 03-10-2022 17:53:14 [TestNG-test=Chrome execution Client Test-1] [AllureLifecycle] - Could not stop step: no step running
+[INFO] 03-10-2022 17:53:14 [TestNG-test=Chrome execution Client Test-1] [Log] - Excel Path: D:\mywork\automation\COLLECTION\AutomationFrameworkSelenium-main\src/test/resources/testdata/ClientsDataExcel.xlsx
+[INFO] 03-10-2022 17:53:14 [TestNG-test=Edge execution Client Test-1] [Log] - Excel Path: D:\mywork\automation\COLLECTION\AutomationFrameworkSelenium-main\src/test/resources/testdata/ClientsDataExcel.xlsx
+[INFO] 03-10-2022 17:53:15 [TestNG-test=Chrome execution Client Test-2] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 03-10-2022 17:53:15 [TestNG-test=Chrome execution Client Test-2] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 03-10-2022 17:53:16 [TestNG-test=Edge execution Client Test-1] [Log] - Row: 3 - Column: 13
+[INFO] 03-10-2022 17:53:16 [TestNG-test=Chrome execution Client Test-1] [Log] - Row: 3 - Column: 13
+[INFO] 03-10-2022 17:53:16 [TestNG-test=Chrome execution Client Test-1] [Log] - StartRow: 1 - EndRow: 2
+[INFO] 03-10-2022 17:53:16 [TestNG-test=Edge execution Client Test-1] [Log] - StartRow: 1 - EndRow: 2
+[INFO] 03-10-2022 17:53:16 [TestNG-PoolService-1] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 03-10-2022 17:53:16 [TestNG-PoolService-0] [WebDriverManager] - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO] 03-10-2022 17:53:16 [TestNG-PoolService-1] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 03-10-2022 17:53:16 [TestNG-PoolService-0] [WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\zubai\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO] 03-10-2022 17:53:17 [TestNG-test=Edge execution Client Test-2] [WebDriverManager] - Using msedgedriver 105.0.1343.53 (resolved driver for Edge 105)
+[INFO] 03-10-2022 17:53:17 [TestNG-test=Edge execution Client Test-2] [WebDriverManager] - Exporting webdriver.edge.driver as C:\Users\zubai\.cache\selenium\msedgedriver\win64\105.0.1343.53\msedgedriver.exe
+[INFO] 03-10-2022 17:53:17 [TestNG-PoolService-0] [WebDriverManager] - Using msedgedriver 105.0.1343.53 (resolved driver for Edge 105)
+[INFO] 03-10-2022 17:53:17 [TestNG-PoolService-1] [WebDriverManager] - Using msedgedriver 105.0.1343.53 (resolved driver for Edge 105)
+[INFO] 03-10-2022 17:53:17 [TestNG-PoolService-1] [WebDriverManager] - Exporting webdriver.edge.driver as C:\Users\zubai\.cache\selenium\msedgedriver\win64\105.0.1343.53\msedgedriver.exe
+[INFO] 03-10-2022 17:53:17 [TestNG-PoolService-0] [WebDriverManager] - Exporting webdriver.edge.driver as C:\Users\zubai\.cache\selenium\msedgedriver\win64\105.0.1343.53\msedgedriver.exe
+[INFO] 03-10-2022 17:53:20 [TestNG-PoolService-1] [Log] - Test case: testAddClient test is starting...
+[INFO] 03-10-2022 17:53:20 [TestNG-test=Chrome execution Client Test-2] [Log] - Test case: testSearchClient test is starting...
+[INFO] 03-10-2022 17:53:20 [TestNG-test=Edge execution Client Test-2] [Log] - Test case: testSearchClient test is starting...
+[INFO] 03-10-2022 17:53:20 [TestNG-PoolService-0] [Log] - Test case: testAddClient test is starting...
+[INFO] 03-10-2022 17:53:21 [TestNG-PoolService-1] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 03-10-2022 17:53:21 [TestNG-test=Edge execution Client Test-2] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 03-10-2022 17:53:21 [TestNG-test=Chrome execution Client Test-2] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 03-10-2022 17:53:21 [TestNG-PoolService-0] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 03-10-2022 17:53:22 [TestNG-PoolService-0] [Log] - Test case: testAddClient test is starting...
+[INFO] 03-10-2022 17:53:22 [TestNG-PoolService-0] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 03-10-2022 17:53:22 [TestNG-PoolService-1] [Log] - Test case: testAddClient test is starting...
+[INFO] 03-10-2022 17:53:22 [TestNG-PoolService-1] [Log] - Set Excel file src/test/resources/testdata/ClientsDataExcel.xlsx and selected Sheet: SignIn
+[INFO] 03-10-2022 17:53:44 [TestNG-test=Chrome execution Client Test-2] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:44 [TestNG-test=Chrome execution Client Test-2] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:44 [TestNG-PoolService-0] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:44 [TestNG-PoolService-0] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:44 [TestNG-test=Chrome execution Client Test-2] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 03-10-2022 17:53:44 [TestNG-PoolService-0] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 03-10-2022 17:53:44 [TestNG-PoolService-1] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:44 [TestNG-PoolService-1] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:45 [TestNG-PoolService-1] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 03-10-2022 17:53:46 [TestNG-PoolService-1] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:46 [TestNG-PoolService-1] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:46 [TestNG-PoolService-1] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 03-10-2022 17:53:52 [TestNG-PoolService-0] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 03-10-2022 17:53:52 [TestNG-test=Edge execution Client Test-2] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:52 [TestNG-test=Edge execution Client Test-2] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:53:52 [TestNG-test=Edge execution Client Test-2] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 03-10-2022 17:53:52 [TestNG-test=Chrome execution Client Test-2] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 03-10-2022 17:53:53 [TestNG-PoolService-1] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 03-10-2022 17:53:56 [TestNG-PoolService-1] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 03-10-2022 17:53:59 [TestNG-test=Chrome execution Client Test-2] [Log] - JQuery is NOT Ready!
+[INFO] 03-10-2022 17:53:59 [TestNG-PoolService-0] [Log] - JQuery is NOT Ready!
+[INFO] 03-10-2022 17:53:59 [TestNG-PoolService-1] [Log] - JQuery is NOT Ready!
+[INFO] 03-10-2022 17:54:01 [TestNG-PoolService-1] [Log] - JQuery is NOT Ready!
+[INFO] 03-10-2022 17:54:02 [TestNG-PoolService-0] [Log] - Open URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:54:02 [TestNG-PoolService-0] [Log] - Current URL: https://rise.fairsketch.com/signin
+[INFO] 03-10-2022 17:54:02 [TestNG-PoolService-0] [Log] - Current Page Title: Sign in | RISE - Ultimate Project Manager and CRM
+[INFO] 03-10-2022 17:54:06 [TestNG-test=Edge execution Client Test-2] [Log] - Javascript in NOT Ready!
+[INFO] 03-10-2022 17:54:10 [TestNG-test=Chrome execution Client Test-2] [Log] - Number of results for keyword (Schamberger Inc): 1
+[INFO] 03-10-2022 17:54:11 [TestNG-test=Chrome execution Client Test-2] [Log] - Row 1: true - Schamberger Inc
+[INFO] 03-10-2022 17:54:17 [TestNG-test=Chrome execution Client Test-2] [Log] - Number of results for keyword (Kassulke LLC): 1
+[INFO] 03-10-2022 17:54:17 [TestNG-test=Chrome execution Client Test-2] [Log] - Row 1: true - Kassulke LLC
+[INFO] 03-10-2022 17:54:17 [TestNG-test=Chrome execution Client Test-2] [Log] - Test case: testSearchClient is passed.
+[INFO] 03-10-2022 17:54:19 [TestNG-PoolService-1] [Log] - Number of results for keyword (Anh Tester Client 1108A2): 2
+[INFO] 03-10-2022 17:54:20 [TestNG-PoolService-1] [Log] - Row 1: true - Anh Tester Client 1108A2
+[INFO] 03-10-2022 17:54:20 [TestNG-PoolService-1] [Log] - Row 2: true - Anh Tester Client 1108A2
+[INFO] 03-10-2022 17:54:20 [TestNG-PoolService-1] [Log] - Number of results for keyword (Anh Tester Client 1108A2): 2
+[INFO] 03-10-2022 17:54:20 [TestNG-PoolService-1] [Log] - Row 1: true - Anh Tester Client 1108A2
+[INFO] 03-10-2022 17:54:20 [TestNG-PoolService-1] [Log] - Row 2: true - Anh Tester Client 1108A2
+[INFO] 03-10-2022 17:54:20 [TestNG-PoolService-0] [Log] - Number of results for keyword (Anh Tester Client 1108A1): 1
+[INFO] 03-10-2022 17:54:20 [TestNG-PoolService-0] [Log] - Row 1: true - Anh Tester Client 1108A1
+[INFO] 03-10-2022 17:54:30 [TestNG-PoolService-1] [Log] - Test case: testAddClient is passed.
+[INFO] 03-10-2022 17:54:31 [TestNG-PoolService-0] [Log] - Test case: testAddClient is passed.
+[INFO] 03-10-2022 17:54:32 [TestNG-PoolService-1] [Log] - Test case: testAddClient is passed.
+[ERROR] 03-10-2022 17:54:36 [TestNG-test=Edge execution Client Test-2] [Log] - Test case: testSearchClient is failed.
+[INFO] 03-10-2022 17:54:36 [TestNG-test=Edge execution Client Test-2] [Log] - Driver for Screenshot: EdgeDriver: msedge on WINDOWS (95f861ab1526b0fce50a782938445f43)
+[INFO] 03-10-2022 17:54:39 [TestNG-PoolService-0] [Log] - Current URL: https://rise.fairsketch.com/dashboard
+[INFO] 03-10-2022 17:54:42 [TestNG-PoolService-0] [Log] - JQuery is NOT Ready!
+[INFO] 03-10-2022 17:54:52 [TestNG-PoolService-0] [Log] - Number of results for keyword (Anh Tester Client 1108A1): 2
+[INFO] 03-10-2022 17:54:52 [TestNG-PoolService-0] [Log] - Row 1: true - Anh Tester Client 1108A1
+[INFO] 03-10-2022 17:54:52 [TestNG-PoolService-0] [Log] - Row 2: true - Anh Tester Client 1108A1
+[INFO] 03-10-2022 17:54:59 [TestNG-PoolService-0] [Log] - Test case: testAddClient is passed.
+[ERROR] 03-10-2022 17:55:36 [TestNG-test=Edge execution Client Test-2] [Log] - FAILED !! Screenshot for test case: testSearchClient
+[ERROR] 03-10-2022 17:55:36 [TestNG-test=Edge execution Client Test-2] [Log] - java.lang.AssertionError: Timeout waiting for page load (Javascript). (30s)
+[ERROR] 03-10-2022 17:57:37 [TestNG-test=Edge execution Client Test-2] [Log] - Test case: testSearchClient is failed.
+[INFO] 03-10-2022 17:57:37 [TestNG-test=Edge execution Client Test-2] [Log] - Driver for Screenshot: EdgeDriver: msedge on WINDOWS (95f861ab1526b0fce50a782938445f43)
+[ERROR] 03-10-2022 17:58:37 [TestNG-test=Edge execution Client Test-2] [Log] - FAILED !! Screenshot for test case: testSearchClient
+[ERROR] 03-10-2022 17:58:37 [TestNG-test=Edge execution Client Test-2] [Log] - org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: MicrosoftEdge=105.0.1343.53)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SQA', ip: '192.168.2.69', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [95f861ab1526b0fce50a782938445f43, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.53, ms:edgeOptions: {debuggerAddress: localhost:52756}, msedge: {msedgedriverVersion: 105.0.1343.53 (3a47f00402d5..., userDataDir: C:\Users\zubai\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52756/devtoo..., se:cdpVersion: 105.0.1343.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 95f861ab1526b0fce50a782938445f43
+[INFO] 03-10-2022 18:00:37 [main] [Log] - End suite testing Regression Tests Parallel

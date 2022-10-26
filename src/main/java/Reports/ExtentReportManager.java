@@ -3,10 +3,7 @@ package Reports;
 import Constants.FrameworkConstants;
 import Enum.AuthorType;
 import Enum.CategoryType;
-import Helpers.BrowserInfoUtils;
-import Helpers.DateUtils;
-import Helpers.IconUtils;
-import Helpers.ReportUtils;
+import Helpers.*;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.Markup;
@@ -95,7 +92,7 @@ public final class ExtentReportManager {
      */
     public static void addScreenShot(Status status, String message) {
         String base64Image = "data:image/png;base64,"
-                + ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BASE64);
+                + ((TakesScreenshot) Helper.getDriver()).getScreenshotAs(OutputType.BASE64);
 
         ExtentTestManager.getExtentTest().log(status, message,
                 ExtentTestManager.getExtentTest().addScreenCaptureFromBase64String(base64Image).getModel().getMedia().get(0));
@@ -103,7 +100,7 @@ public final class ExtentReportManager {
 
     synchronized public static void addAuthors(AuthorType[] authors) {
         if (authors == null) {
-            ExtentTestManager.getExtentTest().assignAuthor("ANHTESTER");
+            ExtentTestManager.getExtentTest().assignAuthor("Zubair Ul Amin");
         } else {
             for (AuthorType author : authors) {
                 ExtentTestManager.getExtentTest().assignAuthor(author.toString());
