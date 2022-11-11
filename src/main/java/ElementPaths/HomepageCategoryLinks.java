@@ -1,0 +1,39 @@
+package ElementPaths;
+
+public interface HomepageCategoryLinks {
+    String allCategoryLink = "//*[@id=\"navbarCollapse\"]/div/ul/li/a";
+    /*String mobileAndTabletCategory = "//*[@id=\"list-tab\"]/a[1]";
+    String personalComputerCategory = "//*[@id=\"list-tab\"]/a[2]";
+    String televisionsCategory = "//*[@id=\"list-tab\"]/a[3]";
+    String electronicsCategory = "//*[@id=\"list-tab\"]/a[4]";
+    String majorAppliancesCategory = "//*[@id=\"list-tab\"]/a[5]";
+    String groceryCategory = "//*[@id=\"list-tab\"]/a[6]";
+    String fragranceCategory = "//*[@id=\"list-tab\"]/a[7]";
+    String watchesCategory = "//*[@id=\"list-tab\"]/a[8]";
+    String toysCategory = "//*[@id=\"list-tab\"]/a[9]";
+    String healthAndPersonalCareCategory = "//*[@id=\"list-tab\"]/a[10]";
+    String videoGamesCategory = "//*[@id=\"list-tab\"]/a[11]";
+    String kitchenCategory = "//*[@id=\"list-tab\"]/a[12]";
+    String homeCategory = "//*[@id=\"list-tab\"]/a[13]";
+    String jewelryCategory = "//*[@id=\"list-tab\"]/a[14]";
+    String personalCareAppliancesCategory = "//*[@id=\"list-tab\"]/a[15]";
+    String sunglassesCategory = "//*[@id=\"list-tab\"]/a[16]";
+    String beautyCategory = "//*[@id=\"list-tab\"]/a[17]";
+    String sportsCategory = "//*[@id=\"list-tab\"]/a[18]";
+    String lawnAndGardenCategory = "//*[@id=\"list-tab\"]/a[19]";
+    String booksCategory = "//*[@id=\"list-tab\"]/a[20]";
+    String bagsLuggageAndTravelCategory = "//*[@id=\"list-tab\"]/a[21]";
+    String cameraCategory = "//*[@id=\"list-tab\"]/a[22]";
+    String homeEntertainmentCategory = "//*[@id=\"list-tab\"]/a[23]";
+    String homeImprovementCategory = "//*[@id=\"list-tab\"]/a[24]";
+    String babyCategory = "//*[@id=\"list-tab\"]/a[25]";
+    String outdoorsCategory = "//*[@id=\"list-tab\"]/a[26]";
+    String toolsCategory = "//*[@id=\"list-tab\"]/a[27]";
+    String officeProductsCategory = "//*[@id=\"list-tab\"]/a[28]";
+    String automotiveCategory = "//*[@id=\"list-tab\"]/a[29]";
+    String apparelCategory = "//*[@id=\"list-tab\"]/a[30]";
+    String musicalInstrumentsCategory = "//*[@id=\"list-tab\"]/a[31]";
+    String furnitureCategory = "//*[@id=\"list-tab\"]/a[32]";
+    String petProductsCategory = "//*[@id=\"list-tab\"]/a[33]";
+    String softwareCategory = "//*[@id=\"list-tab\"]/a[34]";*/
+}
