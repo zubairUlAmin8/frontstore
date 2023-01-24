@@ -4,7 +4,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 public class ExtentTestManager {
 
-    private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+    private static final ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
     public static ExtentTest getExtentTest() {
         //System.out.println("ExtentTestManager class: " + extentTest.get());
