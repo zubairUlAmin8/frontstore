@@ -33,5 +33,9 @@ public class Waits {
         wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         wait.until(ExpectedConditions.textToBePresentInElement(element, value));
     }
+    public static void waitForElementToBeSelectable(WebDriver driver, WebElement element, int timeout) {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 
 }

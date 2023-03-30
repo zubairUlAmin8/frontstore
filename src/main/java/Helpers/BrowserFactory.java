@@ -25,7 +25,7 @@ public class BrowserFactory {
             driver = new EdgeDriver();
         }
         driver.manage().window().maximize();
-        driver.get(url);
+//        driver.get(url);
         return driver;
     }
 }
