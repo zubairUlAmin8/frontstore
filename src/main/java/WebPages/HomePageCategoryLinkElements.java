@@ -86,8 +86,8 @@ public class HomePageCategoryLinkElements extends Helper {
 
         //Reading file using for loop
         for (int i = 1; i <= allNavBarLinks.size(); i++) {
-            String print = bufferedReader.readLine();
-            System.out.println(print+" "+i);
+            String printURL = bufferedReader.readLine();
+            System.out.println(printURL+" || URL count is: "+i);
         }
         bufferedReader.close();
     }
