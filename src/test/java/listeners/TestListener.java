@@ -4,7 +4,7 @@ import Helpers.*;
 import Reports.ExtentReportManager;
 import Enum.*;
 
-import annotations.FrameworkAnnotation;
+import Constants.annotations.FrameworkAnnotation;
 import com.aventstack.extentreports.Status;
 import driver.DriverManager;
 import org.testng.*;
@@ -132,7 +132,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         System.out.println("my case passes");
 
         if (SCREENSHOT_PASSED_STEPS.equals(YES)) {
-//            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
+            CaptureHelpers.captureScreenshot(Helper.getDriver(), getTestName(iTestResult));
         }
 
 //        AllureManager.saveTextLog("Test case: " + getTestName(iTestResult) + " is passed.");
@@ -151,7 +151,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         count_failedTCs = count_failedTCs + 1;
 
         if (SCREENSHOT_FAILED_STEPS.equals(YES)) {
-            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
+            CaptureHelpers.captureScreenshot(Helper.getDriver(), getTestName(iTestResult));
         }
 
         //Allure report screenshot file and log
@@ -178,7 +178,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         count_skippedTCs = count_skippedTCs + 1;
 
         if (SCREENSHOT_SKIPPED_STEPS.equals(YES)) {
-//            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
+            CaptureHelpers.captureScreenshot(Helper.getDriver(), getTestName(iTestResult));
         }
 
         ExtentReportManager.logMessage(Status.SKIP, "Test case: " + getTestName(iTestResult) + " is skipped.");

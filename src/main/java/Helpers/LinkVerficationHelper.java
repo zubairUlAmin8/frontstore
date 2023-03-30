@@ -35,7 +35,6 @@ public class LinkVerficationHelper {
             String imageURL = image.getAttribute("src");
             System.out.println("URL of Image " + (index + 1) + " is: " + imageURL);
             verifyLinks(imageURL);
-
             //Validate image display using JavaScript executor
             try {
                 boolean imageDisplayed = (Boolean) ((JavascriptExecutor) driver).executeScript("return (typeof arguments[0].naturalWidth !=\"undefined\" && arguments[0].naturalWidth > 0);", image);

@@ -1,4 +1,4 @@
-package annotations;
+package Constants.annotations;
 
 import Enum.*;
 
